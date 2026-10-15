@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "checks": {
+    "original_release": "29/29 transport parts: names, byte counts, GitHub SHA256 match repository manifest; originals not downloaded again",
+    "training_export": "Synthetic allowlist/date/empty-day behavior passed; no SSH or actual training data accessed",
+    "materials_tool": "Synthetic multivolume join, full/source hash verification and traversal rejection passed; original 10GB not re-extracted",
+    "broken_markdown_links": [],
+    "credential_scan": "No private-key blocks, GitHub token patterns, credential-bearing URLs or secret files found; explicit allowlist packaging, no personal workspace/config/db copied",
+    "rpg": "Original 9.5095s clip fully decoded; portable functions render CJK PNG, CPU H264 and transparent QTRLE smoke clips; no full listening or cloud environment test",
+    "skill_validation": "fitness-video-handoff, software-video-production and ssh-tencent-cloud-connect passed quick_validate",
+    "cloud_ssh": "Not attempted; credentials absent; private configuration required by receiving Agent",
+    "scene_request": "No fitness footage edited; this request is upload/prepare handoff only"
+  }
+}

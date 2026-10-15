@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-16",
+  "skill_version": "0.5.7",
+  "profile": "fitness portable public handoff",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 50,
+      "sha256": "2d312a549161719a2c949ff88ef1bed7f2b93c4fb10072689705e68196a237df"
+    },
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 2335,
+      "sha256": "a428c043bcd566e2480742ea47204878107487dc232c1b52740e5fd56ad90cfa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 990,
+      "sha256": "6183a9c040bc4a5606f7adaf924c23a7250332ccb175d488735a061bab9ea8e9"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 760,
+      "sha256": "102017ecca463af05327039081c0a82e773a9d6bb5911de9275c2b0c7fb35425"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4387,
+      "sha256": "2d5f2d18d9286a8ec1a717372318691ffb45f161f6d28ef978d8fb14565085dc"
+    },
+    {
+      "path": "agent.txt",
+      "bytes": 2767,
+      "sha256": "3eafbf9758cd0817466799f772134354d28797c4cb43b2db30a751ddb3ff311a"
+    },
+    {
+      "path": "components/rpg/README.md",
+      "bytes": 1440,
+      "sha256": "396ad2a68918b73be396e2d12b403ddf6cbb6fece11276e0de7099b1dddccb42"
+    },
+    {
+      "path": "components/rpg/animation.py",
+      "bytes": 6927,
+      "sha256": "ec150a4c717f20013a52f855a6f71b7e6d82d88b884fd58f33254b6d7561de7a"
+    },
+    {
+      "path": "components/rpg/assets/双人行走精灵.png",
+      "bytes": 1961273,
+      "sha256": "326351cea429030da3175ef394203c51e8f7043fb1aab8fb0f7ec60e1ff07671"
+    },
+    {
+      "path": "components/rpg/assets/商场像素场景.png",
+      "bytes": 2810707,
+      "sha256": "0f531c9d4c8535126b9bd8fa53629eddc35c8ad85c05e7f49a620cbd5dd0b9ef"
+    },
+    {
+      "path": "components/rpg/render_demo.py",
+      "bytes": 1750,
+      "sha256": "92d5eddbb0d3528d88247c7526665fc2629d433bca61d5121be88a2da7f95d7c"
+    },
+    {
+      "path": "reference/健身长片SOP_历史参考.md",
+      "bytes": 10591,
+      "sha256": "a5dfe7530fe65097c10f3c669d8d69569cb11c807087a4253322be6cd2a1d743"
+    },
+    {
+      "path": "reference/精选表情清单.json",
+      "bytes": 72754,
+      "sha256": "aa08fd84bc35e2fd966d4a950e2811627961c6d1e01eef25e70177d8e2a49eec"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 180,
+      "sha256": "cd77a711883ddd4906e719bdc90dfd2d30f409516b60592126240bfe264d91c7"
+    },
+    {
+      "path": "skills/software-video-production/SKILL.md",
+      "bytes": 5961,
+      "sha256": "d7157547d61a72d0ce94c09c5a5f632bfc4f5a9f349730cdf47d65abcb1209e5"
+    },
+    {
+      "path": "skills/software-video-production/agents/openai.yaml",
+      "bytes": 165,
+      "sha256": "02e4643192b8bddfd8485d87a04a32ac25bbe0edd43425fbca5ced2ee4dfd575"
+    },
+    {
+      "path": "skills/software-video-production/docs/agent.md",
+      "bytes": 2437,
+      "sha256": "9f2a5656b83b79588796e132c4efa1e6f69033ead343bdea58be39a2d0566285"
+    },
+    {
+      "path": "skills/software-video-production/docs/audio.md",
+      "bytes": 4265,
+      "sha256": "efb616d100801a46dc5188dc21144aabcc5bb830a178b11555a61c981d0c0398"
+    },
+    {
+      "path": "skills/software-video-production/docs/cases/2026-10-14-desk-tv.md",
+      "bytes": 3551,
+      "sha256": "12c021e886c227476bdeeccc8b25a20789ff1cfe1241c80eb5093a966c64f5fe"
+    },
+    {
+      "path": "skills/software-video-production/docs/cases/2026-10-15-daily.md",
+      "bytes": 2068,
+      "sha256": "44c23e166d1a7e70947c7225da286e0e7a29e588abcf637c3091e3f879c0c51d"
+    },
+    {
+      "path": "skills/software-video-production/docs/cases/2026-10-15-one-click.md",
+      "bytes": 5416,
+      "sha256": "6a2167ea0180cc1485e5735dc132dbf1a70b5101fa56df9ae83c747cf84394a8"
+    },
+    {
+      "path": "skills/software-video-production/docs/cases/2026-10-15-xuhuohua.md",
+      "bytes": 2479,
+      "sha256": "5a38ad596f942afbaa8cb77e199176992b641da6d0cf70d18af47e4585471fb4"
+    },
+    {
+      "path": "skills/software-video-production/docs/creative.md",
+      "bytes": 8276,
+      "sha256": "7d19fff0e9e91317ffb96a72abd26157436f9d77f12cf62cd7cf5e342876ff96"
+    },
+    {
+      "path": "skills/software-video-production/docs/delivery.md",
+      "bytes": 4666,
+      "sha256": "d8ad51e80c39ed466179c78dd212cca16c8b7f562155bcb6202835a5f7f4277c"
+    },
+    {
+      "path": "skills/software-video-production/docs/evolution.md",
+      "bytes": 2741,
+      "sha256": "7031509e8b436dfd039d138ad988125ca2f06dcc3e17c963ca16af512978725e"
+    },
+    {
+      "path": "skills/software-video-production/docs/exemplars.md",
+      "bytes": 4508,
+      "sha256": "9a167f8aa7a4f20f3eca0b83cf7ad4a8e78c915ba67d43ba1f0f1be787c179ed"
+    },
+    {
+      "path": "skills/software-video-production/docs/music-generation.md",
+      "bytes": 4998,
+      "sha256": "bad3f6014f79733fea33f60f91ace9f5c8f8b5cd7fd54b5ecb85042d256e9810"
+    },
+    {
+      "path": "skills/software-video-production/docs/privacy.md",
+      "bytes": 2360,
+      "sha256": "59f62d50eabd77a74351a59e3c21ff63ad523ec1d54957be8ddf9d9a8125e878"
+    },
+    {
+      "path": "skills/software-video-production/docs/roadmap.md",
+      "bytes": 2500,
+      "sha256": "5a0ee701048c8b5b7909020282ef82e8fed172fc132f4e9573db2c0b2d934b1b"
+    },
+    {
+      "path": "skills/software-video-production/docs/tech.md",
+      "bytes": 3219,
+      "sha256": "b4a441fc76339c951b09af812b1d5869cb32995299cddc267dd331c0fea1f097"
+    },
+    {
+      "path": "skills/software-video-production/docs/workflow.md",
+      "bytes": 2969,
+      "sha256": "c4c1114ae0be2a5669de246a804101448c9ae6e613ca204e0ae9d2fd0bc44c8b"
+    },
+    {
+      "path": "skills/software-video-production/examples/INDEX.md",
+      "bytes": 1148,
+      "sha256": "967b0caf22ff306ddfe857318dc9f835d93c14081d09bab4fef253d269e9d631"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/ED01.md",
+      "bytes": 2368,
+      "sha256": "922b20a791263efd867f6ba6b25bbf84f767488ca893800e3ba2c703149ea659"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/MG01.md",
+      "bytes": 2221,
+      "sha256": "8300daa87aa15193425529fed027b53432aeab42e37e14f1b5237fdbf79bb0ea"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/MG02.md",
+      "bytes": 2250,
+      "sha256": "e287ec248781149ea59709ae7e7ea169068b94340335beb1f21726f408043522"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/MV01.md",
+      "bytes": 2166,
+      "sha256": "ac42d752d92267da0fb1e3e20a98445b003f6ad0ad7169524d471fa47b84faed"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/RPG01.md",
+      "bytes": 1653,
+      "sha256": "31ea4bfb7f86f449f7dbbd9da4e3347e332098d8ee69ba42013d57254411e091"
+    },
+    {
+      "path": "skills/software-video-production/examples/cards/SD01.md",
+      "bytes": 2226,
+      "sha256": "12965b396218d9bac48a4a4a7204292f1c826ebf1921dd93372d9ee4c8d58364"
+    },
+    {
+      "path": "skills/software-video-production/examples/catalog.json",
+      "bytes": 7067,
+      "sha256": "5886d9ec193bdb2e216079fd97d6f3dd139762002dca612cf9b8644b735eed18"
+    },
+    {
+      "path": "skills/software-video-production/examples/gallery.html",
+      "bytes": 1315,
+      "sha256": "b04436aa808c30e9f587e446a5a11343dd0c70bbe27aa4c9669a1672d350da9b"
+    },
+    {
+      "path": "skills/software-video-production/examples/media/RPG01-life-interaction.mp4",
+      "bytes": 6421721,
+      "sha256": "1787e770e324e4a92101fdd7771e022d209a52678897aaf9bd154f813b290435"
+    },
+    {
+      "path": "skills/software-video-production/examples/verification.json",
+      "bytes": 1032,
+      "sha256": "9fbd9eea28ec9cef7ba5d3d1500b135e1d3fb7b28d4f1ea944c7f4e881a5f471"
+    },
+    {
+      "path": "skills/software-video-production/scripts/build_reference_clips.py",
+      "bytes": 3103,
+      "sha256": "076c21e3b74cf0ea3515e7a4d752aecbe2155b885d2b4d2f949686a67abde6c7"
+    },
+    {
+      "path": "skills/software-video-production/scripts/media_check.py",
+      "bytes": 6012,
+      "sha256": "7d2e3168a70a034450ea195ec6944116f05ad5fa66e23cf7317662005a633907"
+    },
+    {
+      "path": "skills/software-video-production/version.json",
+      "bytes": 393,
+      "sha256": "438ea90fcf109ef33750728a115853411751e6b6654e75639884d3a2e3041d00"
+    },
+    {
+      "path": "skills/ssh-tencent-cloud-connect/SKILL.md",
+      "bytes": 3217,
+      "sha256": "e292c91ab8d93f60611c3734d53622a95f71e18862668cd749e1566ab3053dec"
+    },
+    {
+      "path": "skills/ssh-tencent-cloud-connect/scripts/export_training_day.py",
+      "bytes": 1451,
+      "sha256": "c8947f39fc7d225b59c8a5a71fe99a0b5d034c41ad521d44d942c9267b9f8e7c"
+    },
+    {
+      "path": "skills/ssh-tencent-cloud-connect/scripts/read_training_day.py",
+      "bytes": 2185,
+      "sha256": "eb70ae6b3a676205858a8dfac1a9a9b3431de422a6fb13d952cf444c8ef353de"
+    },
+    {
+      "path": "tools/check_environment.py",
+      "bytes": 1114,
+      "sha256": "b84b0781c62bb161b5cc29bca8b41f1c078a8a89700ee6a442585308618915bf"
+    },
+    {
+      "path": "tools/materials.py",
+      "bytes": 2804,
+      "sha256": "15ed26b176f02e67d8cad17194d7660dbc05291b6fe9bec1cb54912a17056711"
+    },
+    {
+      "path": "下载说明.txt",
+      "bytes": 619,
+      "sha256": "560563378bd46c85329dc80efc3d371ff5d9c92d2d0dc1b09a0f8bac3e4add00"
+    },
+    {
+      "path": "分包清单.csv",
+      "bytes": 4036,
+      "sha256": "eb7ec3e19559d7486e74c7d5dd41984018c8959e94000f7fc3a934b9c96c9789"
+    },
+    {
+      "path": "系列衔接说明.txt",
+      "bytes": 475,
+      "sha256": "6b7218189c2403d302b04f4f417bfb1ee84a38b56c735f52e47771eb84cc3697"
+    },
+    {
+      "path": "素材清单.csv",
+      "bytes": 12321,
+      "sha256": "52274da7af548cefa6923b14745d8b16e6db80f3a5cdd0d42aecafd4dc58b6c6"
+    }
+  ],
+  "sticker_archive": {
+    "name": "fitness-selected-stickers-20261016.zip",
+    "png_count": 424,
+    "bytes": 56729742,
+    "sha256": "d3ce0448962188af640182b0fe75cca6ba5eb6182b2c6b1498ff14a3c263c1e0"
+  },
+  "not_included": [
+    "private credentials",
+    "real health records",
+    "private daily camera footage",
+    "third-party reference media copies",
+    "large AI model/runtime caches"
+  ]
+}

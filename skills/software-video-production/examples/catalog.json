@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-15",
+  "purpose": "学习剪辑、动效、声音；不是生视频模型画质榜，也不是成片可用素材库",
+  "audio_review": "所有片段保留音轨，当前 Agent 无法耳听，未完成听感验收",
+  "references": [
+    {
+      "id": "ED01",
+      "title": "Apple — Don't Blink",
+      "creator": "Apple（品牌作品；本库未核定具体制作团队）",
+      "source_uploader": "B站合集搬运，账号已注销",
+      "urls": [
+        "https://www.bilibili.com/video/BV1wJ411y7gU/?p=6",
+        "https://www.youtube.com/watch?v=GeoUELDgyM4"
+      ],
+      "source_filename": "ED01.mp4",
+      "time_basis": "本库取得的118.96秒B站合集分P；非原版107秒时间基准",
+      "tags": [
+        "剪辑",
+        "快慢反差",
+        "短语节奏",
+        "实物特写"
+      ],
+      "visual_review": "全片2秒抽帧与25–34.5秒0.5秒间隔检查",
+      "audio_review": "未耳听",
+      "card": "cards/ED01.md",
+      "clips": [
+        {
+          "source_in_s": 25,
+          "source_out_s": 46,
+          "learn": "文字与细节镜头轮换",
+          "source_library_path": "media/ED01-fast.mp4",
+          "bundled": false,
+          "source_url": "https://www.bilibili.com/video/BV1wJ411y7gU/?p=6",
+          "path": "media/ED01-fast.mp4"
+        },
+        {
+          "source_in_s": 95,
+          "source_out_s": 107,
+          "learn": "快速文字后插真人反应，形成停顿",
+          "source_library_path": "media/ED01-pause.mp4",
+          "bundled": false,
+          "source_url": "https://www.bilibili.com/video/BV1wJ411y7gU/?p=6",
+          "path": "media/ED01-pause.mp4"
+        }
+      ]
+    },
+    {
+      "id": "MG01",
+      "title": "Introducing Linear For Agents",
+      "creator": "Linear（品牌作品；未核定动效制作人员）",
+      "source_uploader": "Linear官网公开视频文件",
+      "urls": [
+        "https://linear.app/changelog/2025-05-20-linear-for-agents",
+        "https://www.youtube.com/watch?v=sbwOQV5zY34"
+      ],
+      "download_url": "https://webassets.linear.app/files/ornj730p/production/030bddb82af1240fd46ac324e6c43f68cefe41fa.mp4",
+      "source_filename": "MG01.mp4",
+      "time_basis": "官网32.63秒版本",
+      "tags": [
+        "UI动效",
+        "注意力",
+        "操作反馈",
+        "空间连续"
+      ],
+      "visual_review": "全片2秒抽帧与5.5–9.25秒0.25秒间隔检查",
+      "audio_review": "未耳听",
+      "card": "cards/MG01.md",
+      "clips": [
+        {
+          "source_in_s": 2,
+          "source_out_s": 14,
+          "learn": "列表聚焦、进入详情、反馈出现",
+          "source_library_path": "media/MG01-ui.mp4",
+          "bundled": false,
+          "source_url": "https://linear.app/changelog/2025-05-20-linear-for-agents",
+          "path": "media/MG01-ui.mp4"
+        }
+      ]
+    },
+    {
+      "id": "MG02",
+      "title": "Adobe Express产品宣传片片段（B站转载标题：产品功能宣传片这样做！不信没人看！）",
+      "creator": "画面品牌Adobe Express；原始制作团队待核定，不将转载者当原作者",
+      "source_uploader": "创意者动画制作公司",
+      "urls": [
+        "https://www.bilibili.com/video/BV1C3reBMEgc/"
+      ],
+      "source_filename": "MG02.mp4",
+      "time_basis": "B站29.999秒版本；页面宣传文案写60秒，与实文件不符，按实文件",
+      "tags": [
+        "UI动效",
+        "景别变化",
+        "选择框",
+        "局部编辑",
+        "活泼"
+      ],
+      "visual_review": "全片2秒抽帧与2–6.75秒0.25秒间隔检查",
+      "audio_review": "未耳听",
+      "card": "cards/MG02.md",
+      "clips": [
+        {
+          "source_in_s": 1,
+          "source_out_s": 12,
+          "learn": "全局到局部、编辑动作到结果、屏内到使用场景",
+          "source_library_path": "media/MG02-edit.mp4",
+          "bundled": false,
+          "source_url": "https://www.bilibili.com/video/BV1C3reBMEgc/",
+          "path": "media/MG02-edit.mp4"
+        }
+      ]
+    },
+    {
+      "id": "MV01",
+      "title": "Opus 5.5 vs G*T 6 Astra 做视频谁更厉害？",
+      "creator": "十元钱钱",
+      "source_uploader": "十元钱钱",
+      "urls": [
+        "https://www.douyin.com/video/7690228850878746107",
+        "https://www.bilibili.com/video/BV1Haaq6ZEei/"
+      ],
+      "source_filename": "MV01.mp4",
+      "time_basis": "B站43.73秒比较版，上下两组作品同屏；不评价模型胜负",
+      "tags": [
+        "语义动效",
+        "文字",
+        "表情反应",
+        "用户指定"
+      ],
+      "visual_review": "全片2秒抽帧与21–30.5秒0.5秒间隔检查",
+      "audio_review": "未耳听，不将作者踩点描述当本库试听结论",
+      "card": "cards/MV01.md",
+      "clips": [
+        {
+          "source_in_s": 21,
+          "source_out_s": 33,
+          "learn": "信封投递、心形承接、字与方向动作对应",
+          "source_library_path": "media/MV01-meaning.mp4",
+          "bundled": false,
+          "source_url": "https://www.douyin.com/video/7690228850878746107",
+          "path": "media/MV01-meaning.mp4"
+        }
+      ]
+    },
+    {
+      "id": "SD01",
+      "title": "新手也能学会的音效设计！一秒变大片【干货】— 开场成片蒙太奇",
+      "creator": "小鹿Lawrence（教程发布者；开场素材逐条作者未核定）",
+      "source_uploader": "小鹿Lawrence",
+      "urls": [
+        "https://www.bilibili.com/video/BV17D4y167tQ/"
+      ],
+      "source_filename": "SD01-start.mp4",
+      "source_file_start_s": 0,
+      "time_basis": "完整教程约1013秒；本地仅保存0–75秒，精选片段取12–24秒，不宣称保存完整教程",
+      "tags": [
+        "声音设计",
+        "前景动作",
+        "听辨练习",
+        "待试听"
+      ],
+      "visual_review": "0–75秒2秒抽帧；确认12–24秒为片段演示，不是长段讲课",
+      "audio_review": "待耳听；仅核验音轨存在与可解码，不给音效优秀结论",
+      "card": "cards/SD01.md",
+      "clips": [
+        {
+          "source_in_s": 12,
+          "source_out_s": 24,
+          "learn": "奔跑、磁带和设备近景的声音听辨对照",
+          "source_library_path": "media/SD01-foley.mp4",
+          "bundled": false,
+          "source_url": "https://www.bilibili.com/video/BV17D4y167tQ/",
+          "path": "media/SD01-foley.mp4"
+        }
+      ]
+    }
+  ],
+  "distribution": "Public kit: third-party reference links/cards only; RPG01 original animation bundled",
+  "original_examples": [
+    {
+      "id": "RPG01",
+      "path": "media/RPG01-life-interaction.mp4",
+      "card": "cards/RPG01.md",
+      "private_camera_footage": false,
+      "platform_song": false
+    }
+  ]
+}

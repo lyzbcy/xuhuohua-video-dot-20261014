@@ -1,0 +1,43 @@
+{
+  "source": "media/RPG01-life-interaction.mp4",
+  "mode": "verify",
+  "technical_pass": true,
+  "aesthetic_checked": false,
+  "privacy_checked": false,
+  "errors": [],
+  "duration_seconds": 9.5095,
+  "size_bytes": 6421721,
+  "has_audio": true,
+  "video": {
+    "codec": "h264",
+    "coded_width": 1920,
+    "coded_height": 1080,
+    "rotation_degrees": 0.0,
+    "display_width": 1920,
+    "display_height": 1080,
+    "fps": "30000/1001",
+    "pixel_format": "yuv420p",
+    "color_primaries": null,
+    "color_transfer": null,
+    "color_space": null,
+    "hdr_signal": false
+  },
+  "audio_streams": [
+    {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 2
+    }
+  ],
+  "decode": {
+    "exit_code": 0,
+    "passed": true
+  },
+  "audio_measurement": {
+    "integrated_lufs": "-38.27",
+    "true_peak_dbtp": "-25.68",
+    "loudness_range_lu": "11.60",
+    "listened": false,
+    "note": "Measurement only; no aesthetic assessment or automatic loudness approval."
+  }
+}

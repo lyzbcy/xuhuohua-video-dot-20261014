@@ -1,0 +1,4 @@
+Pillow>=10.0
+numpy>=1.24
+# Optional by selected workflow: faster-whisper, edge-tts, rapidocr-onnxruntime.
+# ffmpeg/ffprobe and CJK fonts are system dependencies, not pip packages.

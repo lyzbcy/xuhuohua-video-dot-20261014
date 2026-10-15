@@ -1,0 +1,6 @@
+work/
+.env
+*.pem
+*.key
+__pycache__/
+private-data/
