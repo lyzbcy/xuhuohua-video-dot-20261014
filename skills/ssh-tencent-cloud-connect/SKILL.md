@@ -5,7 +5,11 @@ description: 使用已记录的服务器地址与SSH用户名，在用户提供�
 
 # 训练数据只读连接 · 公开便携版
 
-由本机周五涵工作区的SSH连接Skill按本次任务裁减。依用户要求记录服务器地址与SSH用户名；未复制整份个人目录、密码、私钥、Cookie或健康记录。以下身份来自本机既有连接记录，服务器尚未在本任务中实连验证。
+由本机周五涵工作区的SSH连接Skill按本次任务裁减。依用户要求记录服务器地址与SSH用户名；未复制整份个人目录、密码、私钥或Cookie。后续已由本机Agent验证以下服务器身份，并按用户明确授权只读导出2026-10-06单日训练摘录。
+
+## 本次数据已经可用
+
+优先读[训练JSON](../../data/training-2026-10-06.json)与[使用说明](../../reference/训练数据使用说明.md)：60个原始动作名称、87组，仅器械/动作、重量、组数与次数。**dot不再需要为此连接SSH或索要密码。**以下连接步骤只用于以后另行授权重新取数，不能因为有单日摘录就扩大导出范围。
 
 ## 配置与身份
 
@@ -26,7 +30,7 @@ python skills/ssh-tencent-cloud-connect/scripts/read_training_day.py --host 111.
 
 ## 记录来源与含义
 
-本机已有数据脚本指向`/home/openclaw-shared/fitness/records.jsonl`，`exercises.json`为器械/动作字典。这里只把路径作为探查线索，远端存在与schema需实连确认。拍摄文件名候选日为2026-10-06；用原声/元信息确认后再查，不读取最新一天冒充拍摄当天。
+本次实际读取`/home/openclaw-shared/fitness/records.jsonl`，指定2026-10-06且`action=set`得到87条。`exercises.json`为本机已有脚本提及的器械/动作字典，本次不需要读取，也不声称验证过其内容。之后重新取数仍须明确日期，不读取最新一天冒充拍摄当天。
 
 解析器针对已知的`action=set`、`date`、`exercise`、`weight`、`reps`、`ts`字段，只返回指定日的训练组及必要时间，绝不读取饮食、病历或全量身体指标。缺字段输出null，未知动作/器械别名需核对；没有该日记录即报错，不编数字。若真实schema改变，先检查键名并适配，不把空结果视作没有训练。
 
@@ -36,7 +40,7 @@ python skills/ssh-tencent-cloud-connect/scripts/read_training_day.py --host 111.
 python skills/ssh-tencent-cloud-connect/scripts/export_training_day.py --records /path/to/records.jsonl --date 2026-10-06
 ```
 
-结果只存私有工作目录，不提交GitHub。把对应训练组与实拍器械逐一对齐后再上屏；视频加速不改变原始次数，不能用加速时长推算训练量。训练组数是匹配记录条数，单条记录的次数来自reps，两者区分。
+原始筛选结果默认只存私有工作目录。用户此次另行明确授权补传的精简训练JSON已经发布；这不授权公开其他日期、其他字段或全量数据库。把对应训练组与实拍器械逐一对齐后再上屏；视频加速不改变原始次数，不能用加速时长推算训练量。训练组数是匹配记录条数，单条记录的次数来自reps，两者区分。
 
 ## 生产边界
 

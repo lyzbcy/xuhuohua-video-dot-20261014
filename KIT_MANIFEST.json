@@ -10,13 +10,13 @@
     },
     {
       "path": "00_START_HERE.md",
-      "bytes": 2421,
-      "sha256": "cd68bda977beb43a8a26a47dfd5195d7a4ed09db3d374c40deb3de4e81fbcca3"
+      "bytes": 2608,
+      "sha256": "10568e8f01b57352b3282fa0cfae49aad6139da35f387a16fd2cc74493fb68ba"
     },
     {
       "path": "README.md",
-      "bytes": 1050,
-      "sha256": "af082c83ac1f575112d3dc83d04205fe3753c22e0c2eb3dd1b2b6eff1c9fc422"
+      "bytes": 1363,
+      "sha256": "c6bb36993514414ab6d06a3cebb6457fde45e99b7770e3c09c97be99dc468487"
     },
     {
       "path": "SHA256SUMS.txt",
@@ -25,8 +25,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 4432,
-      "sha256": "f47d2f442712faaba0fe11e13f7fb5f898c644477c1c3554b6a5590c632c3162"
+      "bytes": 4690,
+      "sha256": "4b9c53d8dee577ad1b92eb7c6cadef0a07571bb2b931a0adb0b189a678f2c1a2"
     },
     {
       "path": "agent.txt",
@@ -59,6 +59,16 @@
       "sha256": "92d5eddbb0d3528d88247c7526665fc2629d433bca61d5121be88a2da7f95d7c"
     },
     {
+      "path": "data/training-2026-10-06.json",
+      "bytes": 36951,
+      "sha256": "7f50715cc7e80235ed84bb23653d173875bb715865c2deb8da9957b26c83d01c"
+    },
+    {
+      "path": "data/training-2026-10-06.sha256",
+      "bytes": 92,
+      "sha256": "04e5745c82671364af72b469ab4f7b7ea03581f7e358dbb413330c1c0b52204d"
+    },
+    {
       "path": "reference/健身长片SOP_历史参考.md",
       "bytes": 10591,
       "sha256": "a5dfe7530fe65097c10f3c669d8d69569cb11c807087a4253322be6cd2a1d743"
@@ -67,6 +77,11 @@
       "path": "reference/精选表情清单.json",
       "bytes": 72754,
       "sha256": "aa08fd84bc35e2fd966d4a950e2811627961c6d1e01eef25e70177d8e2a49eec"
+    },
+    {
+      "path": "reference/训练数据使用说明.md",
+      "bytes": 2014,
+      "sha256": "70bb078f2b868be69a1041752763a238b611599fdc8bdfc5a94af5f59176ccd0"
     },
     {
       "path": "requirements.txt",
@@ -230,8 +245,8 @@
     },
     {
       "path": "skills/ssh-tencent-cloud-connect/SKILL.md",
-      "bytes": 3432,
-      "sha256": "81ffc906f28a49fdd38a26a52ea18c6c1bcb6e37f856cfc3db73e6f1f8fc378b"
+      "bytes": 3981,
+      "sha256": "b92797c96f13b73e3e6095dac1995a5407906175cd75a8064950e789f8c733b5"
     },
     {
       "path": "skills/ssh-tencent-cloud-connect/scripts/export_training_day.py",
@@ -282,10 +297,18 @@
   },
   "not_included": [
     "private credentials",
-    "real health records",
+    "health records outside the authorized single-day training projection",
     "private daily camera footage",
     "third-party reference media copies",
     "large AI model/runtime caches"
   ],
-  "handoff_revision": 2
+  "handoff_revision": 3,
+  "authorized_training_excerpt": {
+    "path": "data/training-2026-10-06.json",
+    "date": "2026-10-06",
+    "distinct_recorded_exercise_names": 60,
+    "recorded_sets": 87,
+    "sha256": "7f50715cc7e80235ed84bb23653d173875bb715865c2deb8da9957b26c83d01c",
+    "authentication_required_for_recipient": false
+  }
 }

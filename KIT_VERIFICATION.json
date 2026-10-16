@@ -2,14 +2,15 @@
   "date": "2026-10-16",
   "checks": {
     "original_release": "29/29 transport parts: names, byte counts, GitHub SHA256 match repository manifest; originals not downloaded again",
-    "training_export": "Synthetic allowlist/date/empty-day behavior passed; no SSH or actual training data accessed",
+    "training_export": "Actual 2026-10-06 source records read via SSH: 87 set rows, 60 distinct original exercise names, no missing weight/reps; delivered weight/reps/name equal selected source rows; only requested training projection published",
     "materials_tool": "Synthetic multivolume join, full/source hash verification and traversal rejection passed; original 10GB not re-extracted",
     "broken_markdown_links": [],
     "credential_scan": "No private-key blocks, GitHub token patterns, credential-bearing URLs or secret files found; explicit allowlist packaging, no personal workspace/config/db copied",
     "rpg": "Original 9.5095s clip fully decoded; portable functions render CJK PNG, CPU H264 and transparent QTRLE smoke clips; no full listening or cloud environment test",
     "skill_validation": "fitness-video-handoff, software-video-production and ssh-tencent-cloud-connect passed quick_validate",
-    "cloud_ssh": "Not attempted; host, SSH user and expected hostname supplied from pre-existing local SSH Skill per user request; authentication credentials remain private",
-    "scene_request": "No fitness footage edited; this request is upload/prepare handoff only"
+    "cloud_ssh": "Local Windows connection succeeded using existing SSH Skill interactive authentication; hostname and whoami verified before exporting; no remote application files written; no credentials included",
+    "scene_request": "No fitness footage edited; this request is upload/prepare handoff only",
+    "synthetic_training_export": "Synthetic allowlist/date/empty-day behavior passed; no SSH or actual training data accessed"
   },
-  "update": "2026-10-16 user requested server address and SSH username in the Skill; documentation and bundle refreshed, functional code unchanged"
+  "update": "2026-10-16: user-authorized single-day minimal training JSON published for offline use by dot; no other health records exported"
 }

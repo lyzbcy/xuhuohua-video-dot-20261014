@@ -1,0 +1,1521 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "source": {
+    "type": "live_ssh_read_only_export",
+    "records": "fitness/records.jsonl",
+    "filter": {
+      "date": "2026-10-06",
+      "action": "set"
+    },
+    "server_identity_verified": true,
+    "export_date": "2026-10-16",
+    "application_files_written_on_server": false
+  },
+  "summary": {
+    "distinct_recorded_exercise_names": 60,
+    "recorded_sets": 87
+  },
+  "notes": [
+    "动作/器械名称保留原始记录，未按猜测合并别名；60个名称不等于60台独立器械。",
+    "组数是匹配的set记录条数，次数来自逐组reps，不用视频时长推算。",
+    "weight_kg保留原系统重量记录，不转换为单双侧总重量、滑轮等效阻力或身体重量。",
+    "名称注明自重的动作里0 kg是原记录值，不代表体重为0；辅助引体向上的记录值不得直接解释成额外负重。",
+    "顺序为源文件记录顺序；与实拍器械、区域和剪辑时间需另行核对。"
+  ],
+  "exercises": [
+    {
+      "exercise": "七星卷腹（插片式）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 1,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "器械坐姿卷腹（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 2,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 4
+        },
+        {
+          "source_set_index": 3,
+          "set_number_for_exercise": 2,
+          "weight_kg": 40.0,
+          "reps": 18
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械举腿（插片式）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 4,
+          "set_number_for_exercise": 1,
+          "weight_kg": 59.0,
+          "reps": 15
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械弯举（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 5,
+          "set_number_for_exercise": 1,
+          "weight_kg": 59.0,
+          "reps": 17
+        },
+        {
+          "source_set_index": 6,
+          "set_number_for_exercise": 2,
+          "weight_kg": 61.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "器械二头弯举（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 7,
+          "set_number_for_exercise": 1,
+          "weight_kg": 25.0,
+          "reps": 7
+        },
+        {
+          "source_set_index": 9,
+          "set_number_for_exercise": 2,
+          "weight_kg": 25.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "蝴蝶机反向飞鸟",
+      "set_count": 3,
+      "sets": [
+        {
+          "source_set_index": 8,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 10,
+          "set_number_for_exercise": 2,
+          "weight_kg": 59.0,
+          "reps": 8
+        },
+        {
+          "source_set_index": 12,
+          "set_number_for_exercise": 3,
+          "weight_kg": 50.0,
+          "reps": 11
+        }
+      ]
+    },
+    {
+      "exercise": "站姿器械飞鸟",
+      "set_count": 3,
+      "sets": [
+        {
+          "source_set_index": 11,
+          "set_number_for_exercise": 1,
+          "weight_kg": 18.0,
+          "reps": 10
+        },
+        {
+          "source_set_index": 44,
+          "set_number_for_exercise": 2,
+          "weight_kg": 30.0,
+          "reps": 10
+        },
+        {
+          "source_set_index": 45,
+          "set_number_for_exercise": 3,
+          "weight_kg": 30.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "蝴蝶机夹胸",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 13,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "辅助引体向上",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 14,
+          "set_number_for_exercise": 1,
+          "weight_kg": 20.0,
+          "reps": 3
+        },
+        {
+          "source_set_index": 15,
+          "set_number_for_exercise": 2,
+          "weight_kg": 50.0,
+          "reps": 11
+        }
+      ]
+    },
+    {
+      "exercise": "龙门架绳索划船（V把）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 16,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 20
+        },
+        {
+          "source_set_index": 17,
+          "set_number_for_exercise": 2,
+          "weight_kg": 45.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "绳索下压（龙门架双头绳）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 18,
+          "set_number_for_exercise": 1,
+          "weight_kg": 45.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "对卧窄距引体向上（自重）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 19,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0.0,
+          "reps": 2
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械飞鸟",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 20,
+          "set_number_for_exercise": 1,
+          "weight_kg": 20.0,
+          "reps": 20
+        },
+        {
+          "source_set_index": 21,
+          "set_number_for_exercise": 2,
+          "weight_kg": 34.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械划船（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 22,
+          "set_number_for_exercise": 1,
+          "weight_kg": 32.0,
+          "reps": 20
+        },
+        {
+          "source_set_index": 23,
+          "set_number_for_exercise": 2,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械推肩（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 24,
+          "set_number_for_exercise": 1,
+          "weight_kg": 17.0,
+          "reps": 20
+        },
+        {
+          "source_set_index": 25,
+          "set_number_for_exercise": 2,
+          "weight_kg": 21.0,
+          "reps": 14
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械推胸（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 26,
+          "set_number_for_exercise": 1,
+          "weight_kg": 36.0,
+          "reps": 8
+        },
+        {
+          "source_set_index": 37,
+          "set_number_for_exercise": 2,
+          "weight_kg": 25.0,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "分体式高位下拉（插片式）",
+      "set_count": 3,
+      "sets": [
+        {
+          "source_set_index": 27,
+          "set_number_for_exercise": 1,
+          "weight_kg": 86.0,
+          "reps": 5
+        },
+        {
+          "source_set_index": 28,
+          "set_number_for_exercise": 2,
+          "weight_kg": 82.0,
+          "reps": 0
+        },
+        {
+          "source_set_index": 31,
+          "set_number_for_exercise": 3,
+          "weight_kg": 82.0,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械髋内收（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 29,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 32,
+          "set_number_for_exercise": 2,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械髋外展（插片式）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 30,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "分体式卧推（挂杠铃片）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 33,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 34,
+          "set_number_for_exercise": 2,
+          "weight_kg": 40.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "器械推胸（挂杠铃片式，斜上推低位）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 35,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 2
+        },
+        {
+          "source_set_index": 36,
+          "set_number_for_exercise": 2,
+          "weight_kg": 30.0,
+          "reps": 4
+        }
+      ]
+    },
+    {
+      "exercise": "高位下拉（对握/正常握距）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 38,
+          "set_number_for_exercise": 1,
+          "weight_kg": 45.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械划船（插片式，反握）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 39,
+          "set_number_for_exercise": 1,
+          "weight_kg": 45.0,
+          "reps": 15
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿划船（挂杠铃片，大剪刀手柄）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 40,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 20
+        }
+      ]
+    },
+    {
+      "exercise": "大剪刀交叉下拉（挂杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 41,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械推肩（挂杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 42,
+          "set_number_for_exercise": 1,
+          "weight_kg": 10.0,
+          "reps": 15
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿腿弯举（挂杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 43,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "站姿器械胸飞鸟（从上往下夹）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 46,
+          "set_number_for_exercise": 1,
+          "weight_kg": 60.0,
+          "reps": 10
+        },
+        {
+          "source_set_index": 47,
+          "set_number_for_exercise": 2,
+          "weight_kg": 60.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "分体式坐姿划船（挂杠铃片，双手分划）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 48,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 20
+        },
+        {
+          "source_set_index": 49,
+          "set_number_for_exercise": 2,
+          "weight_kg": 70.0,
+          "reps": 11
+        }
+      ]
+    },
+    {
+      "exercise": "分体式高位下拉（挂杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 50,
+          "set_number_for_exercise": 1,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "器械T杠划船",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 51,
+          "set_number_for_exercise": 1,
+          "weight_kg": 20.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "器械提杠划船（反握）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 52,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "器械站姿后踢腿（挂杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 53,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 60
+        }
+      ]
+    },
+    {
+      "exercise": "器械俯卧后弯举（插片式）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 54,
+          "set_number_for_exercise": 1,
+          "weight_kg": 45.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 55,
+          "set_number_for_exercise": 2,
+          "weight_kg": 50.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "单腿跪姿器械下蹬腿（挂杠铃片）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 56,
+          "set_number_for_exercise": 1,
+          "weight_kg": 25.0,
+          "reps": 14
+        },
+        {
+          "source_set_index": 57,
+          "set_number_for_exercise": 2,
+          "weight_kg": 40.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "倒蹬机（挂杠铃片）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 58,
+          "set_number_for_exercise": 1,
+          "weight_kg": 60.0,
+          "reps": 10
+        },
+        {
+          "source_set_index": 59,
+          "set_number_for_exercise": 2,
+          "weight_kg": 100.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿蹬腿机（插片式）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 60,
+          "set_number_for_exercise": 1,
+          "weight_kg": 96.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿器械推胸（挂杠铃片，平推）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 61,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "深蹲（器械挂杠铃片）",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 62,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 63,
+          "set_number_for_exercise": 2,
+          "weight_kg": 60.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "龙门架绳索二头弯举",
+      "set_count": 2,
+      "sets": [
+        {
+          "source_set_index": 64,
+          "set_number_for_exercise": 1,
+          "weight_kg": 18.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 65,
+          "set_number_for_exercise": 2,
+          "weight_kg": 25.0,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "exercise": "史密斯卧推",
+      "set_count": 3,
+      "sets": [
+        {
+          "source_set_index": 66,
+          "set_number_for_exercise": 1,
+          "weight_kg": 20.0,
+          "reps": 12
+        },
+        {
+          "source_set_index": 67,
+          "set_number_for_exercise": 2,
+          "weight_kg": 70.0,
+          "reps": 3
+        },
+        {
+          "source_set_index": 68,
+          "set_number_for_exercise": 3,
+          "weight_kg": 60.0,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "exercise": "史密斯臀桥",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 69,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "史密斯空杆俯身划船（半蹲贴腿滑杠）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 70,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "自由杠铃俯身划船（半蹲贴腿滑杠）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 71,
+          "set_number_for_exercise": 1,
+          "weight_kg": 60.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "单腿辅助深蹲（扶器械）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 72,
+          "set_number_for_exercise": 1,
+          "weight_kg": 20.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "臀桥（挂腰带+杠铃片）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 73,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "正向哈克深蹲",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 74,
+          "set_number_for_exercise": 1,
+          "weight_kg": 80.0,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "小龙门架绳索夹胸",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 75,
+          "set_number_for_exercise": 1,
+          "weight_kg": 40.0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "exercise": "站姿W杠二头弯举",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 76,
+          "set_number_for_exercise": 1,
+          "weight_kg": 25.0,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "exercise": "坐姿哑铃推肩",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 77,
+          "set_number_for_exercise": 1,
+          "weight_kg": 12.5,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "45°上斜俯卧哑铃飞鸟（自由哑铃）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 78,
+          "set_number_for_exercise": 1,
+          "weight_kg": 10.0,
+          "reps": 9
+        }
+      ]
+    },
+    {
+      "exercise": "山羊挺身（抱10kg哑铃）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 79,
+          "set_number_for_exercise": 1,
+          "weight_kg": 10.0,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "exercise": "罗马椅侧腹（左侧）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 80,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0,
+          "reps": 14
+        }
+      ]
+    },
+    {
+      "exercise": "罗马椅侧腹（右侧）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 81,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0,
+          "reps": 21
+        }
+      ]
+    },
+    {
+      "exercise": "器械悬垂举腿（自重）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 82,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0.0,
+          "reps": 22
+        }
+      ]
+    },
+    {
+      "exercise": "山羊挺身（负重5kg）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 83,
+          "set_number_for_exercise": 1,
+          "weight_kg": 5.0,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "exercise": "牧师凳二头弯举（直杆）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 84,
+          "set_number_for_exercise": 1,
+          "weight_kg": 15.0,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "exercise": "器械悬垂举腿（负重5kg）",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 85,
+          "set_number_for_exercise": 1,
+          "weight_kg": 5.0,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "exercise": "俯身轨道式划船器",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 86,
+          "set_number_for_exercise": 1,
+          "weight_kg": 30.0,
+          "reps": 7
+        }
+      ]
+    },
+    {
+      "exercise": "卷腹",
+      "set_count": 1,
+      "sets": [
+        {
+          "source_set_index": 87,
+          "set_number_for_exercise": 1,
+          "weight_kg": 0.0,
+          "reps": 18
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "exercise": "七星卷腹（插片式）",
+      "source_set_index": 1,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "器械坐姿卷腹（插片式）",
+      "source_set_index": 2,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 4
+    },
+    {
+      "exercise": "器械坐姿卷腹（插片式）",
+      "source_set_index": 3,
+      "set_number_for_exercise": 2,
+      "weight_kg": 40.0,
+      "reps": 18
+    },
+    {
+      "exercise": "坐姿器械举腿（插片式）",
+      "source_set_index": 4,
+      "set_number_for_exercise": 1,
+      "weight_kg": 59.0,
+      "reps": 15
+    },
+    {
+      "exercise": "坐姿器械弯举（插片式）",
+      "source_set_index": 5,
+      "set_number_for_exercise": 1,
+      "weight_kg": 59.0,
+      "reps": 17
+    },
+    {
+      "exercise": "坐姿器械弯举（插片式）",
+      "source_set_index": 6,
+      "set_number_for_exercise": 2,
+      "weight_kg": 61.0,
+      "reps": 10
+    },
+    {
+      "exercise": "器械二头弯举（插片式）",
+      "source_set_index": 7,
+      "set_number_for_exercise": 1,
+      "weight_kg": 25.0,
+      "reps": 7
+    },
+    {
+      "exercise": "蝴蝶机反向飞鸟",
+      "source_set_index": 8,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 12
+    },
+    {
+      "exercise": "器械二头弯举（插片式）",
+      "source_set_index": 9,
+      "set_number_for_exercise": 2,
+      "weight_kg": 25.0,
+      "reps": 8
+    },
+    {
+      "exercise": "蝴蝶机反向飞鸟",
+      "source_set_index": 10,
+      "set_number_for_exercise": 2,
+      "weight_kg": 59.0,
+      "reps": 8
+    },
+    {
+      "exercise": "站姿器械飞鸟",
+      "source_set_index": 11,
+      "set_number_for_exercise": 1,
+      "weight_kg": 18.0,
+      "reps": 10
+    },
+    {
+      "exercise": "蝴蝶机反向飞鸟",
+      "source_set_index": 12,
+      "set_number_for_exercise": 3,
+      "weight_kg": 50.0,
+      "reps": 11
+    },
+    {
+      "exercise": "蝴蝶机夹胸",
+      "source_set_index": 13,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 9
+    },
+    {
+      "exercise": "辅助引体向上",
+      "source_set_index": 14,
+      "set_number_for_exercise": 1,
+      "weight_kg": 20.0,
+      "reps": 3
+    },
+    {
+      "exercise": "辅助引体向上",
+      "source_set_index": 15,
+      "set_number_for_exercise": 2,
+      "weight_kg": 50.0,
+      "reps": 11
+    },
+    {
+      "exercise": "龙门架绳索划船（V把）",
+      "source_set_index": 16,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 20
+    },
+    {
+      "exercise": "龙门架绳索划船（V把）",
+      "source_set_index": 17,
+      "set_number_for_exercise": 2,
+      "weight_kg": 45.0,
+      "reps": 10
+    },
+    {
+      "exercise": "绳索下压（龙门架双头绳）",
+      "source_set_index": 18,
+      "set_number_for_exercise": 1,
+      "weight_kg": 45.0,
+      "reps": 10
+    },
+    {
+      "exercise": "对卧窄距引体向上（自重）",
+      "source_set_index": 19,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0.0,
+      "reps": 2
+    },
+    {
+      "exercise": "坐姿器械飞鸟",
+      "source_set_index": 20,
+      "set_number_for_exercise": 1,
+      "weight_kg": 20.0,
+      "reps": 20
+    },
+    {
+      "exercise": "坐姿器械飞鸟",
+      "source_set_index": 21,
+      "set_number_for_exercise": 2,
+      "weight_kg": 34.0,
+      "reps": 10
+    },
+    {
+      "exercise": "坐姿器械划船（插片式）",
+      "source_set_index": 22,
+      "set_number_for_exercise": 1,
+      "weight_kg": 32.0,
+      "reps": 20
+    },
+    {
+      "exercise": "坐姿器械划船（插片式）",
+      "source_set_index": 23,
+      "set_number_for_exercise": 2,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "坐姿器械推肩（插片式）",
+      "source_set_index": 24,
+      "set_number_for_exercise": 1,
+      "weight_kg": 17.0,
+      "reps": 20
+    },
+    {
+      "exercise": "坐姿器械推肩（插片式）",
+      "source_set_index": 25,
+      "set_number_for_exercise": 2,
+      "weight_kg": 21.0,
+      "reps": 14
+    },
+    {
+      "exercise": "坐姿器械推胸（插片式）",
+      "source_set_index": 26,
+      "set_number_for_exercise": 1,
+      "weight_kg": 36.0,
+      "reps": 8
+    },
+    {
+      "exercise": "分体式高位下拉（插片式）",
+      "source_set_index": 27,
+      "set_number_for_exercise": 1,
+      "weight_kg": 86.0,
+      "reps": 5
+    },
+    {
+      "exercise": "分体式高位下拉（插片式）",
+      "source_set_index": 28,
+      "set_number_for_exercise": 2,
+      "weight_kg": 82.0,
+      "reps": 0
+    },
+    {
+      "exercise": "坐姿器械髋内收（插片式）",
+      "source_set_index": 29,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 12
+    },
+    {
+      "exercise": "坐姿器械髋外展（插片式）",
+      "source_set_index": 30,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 12
+    },
+    {
+      "exercise": "分体式高位下拉（插片式）",
+      "source_set_index": 31,
+      "set_number_for_exercise": 3,
+      "weight_kg": 82.0,
+      "reps": 5
+    },
+    {
+      "exercise": "坐姿器械髋内收（插片式）",
+      "source_set_index": 32,
+      "set_number_for_exercise": 2,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "分体式卧推（挂杠铃片）",
+      "source_set_index": 33,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 12
+    },
+    {
+      "exercise": "分体式卧推（挂杠铃片）",
+      "source_set_index": 34,
+      "set_number_for_exercise": 2,
+      "weight_kg": 40.0,
+      "reps": 10
+    },
+    {
+      "exercise": "器械推胸（挂杠铃片式，斜上推低位）",
+      "source_set_index": 35,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 2
+    },
+    {
+      "exercise": "器械推胸（挂杠铃片式，斜上推低位）",
+      "source_set_index": 36,
+      "set_number_for_exercise": 2,
+      "weight_kg": 30.0,
+      "reps": 4
+    },
+    {
+      "exercise": "坐姿器械推胸（插片式）",
+      "source_set_index": 37,
+      "set_number_for_exercise": 2,
+      "weight_kg": 25.0,
+      "reps": 9
+    },
+    {
+      "exercise": "高位下拉（对握/正常握距）",
+      "source_set_index": 38,
+      "set_number_for_exercise": 1,
+      "weight_kg": 45.0,
+      "reps": 12
+    },
+    {
+      "exercise": "坐姿器械划船（插片式，反握）",
+      "source_set_index": 39,
+      "set_number_for_exercise": 1,
+      "weight_kg": 45.0,
+      "reps": 15
+    },
+    {
+      "exercise": "坐姿划船（挂杠铃片，大剪刀手柄）",
+      "source_set_index": 40,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 20
+    },
+    {
+      "exercise": "大剪刀交叉下拉（挂杠铃片）",
+      "source_set_index": 41,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "坐姿器械推肩（挂杠铃片）",
+      "source_set_index": 42,
+      "set_number_for_exercise": 1,
+      "weight_kg": 10.0,
+      "reps": 15
+    },
+    {
+      "exercise": "坐姿腿弯举（挂杠铃片）",
+      "source_set_index": 43,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 12
+    },
+    {
+      "exercise": "站姿器械飞鸟",
+      "source_set_index": 44,
+      "set_number_for_exercise": 2,
+      "weight_kg": 30.0,
+      "reps": 10
+    },
+    {
+      "exercise": "站姿器械飞鸟",
+      "source_set_index": 45,
+      "set_number_for_exercise": 3,
+      "weight_kg": 30.0,
+      "reps": 10
+    },
+    {
+      "exercise": "站姿器械胸飞鸟（从上往下夹）",
+      "source_set_index": 46,
+      "set_number_for_exercise": 1,
+      "weight_kg": 60.0,
+      "reps": 10
+    },
+    {
+      "exercise": "站姿器械胸飞鸟（从上往下夹）",
+      "source_set_index": 47,
+      "set_number_for_exercise": 2,
+      "weight_kg": 60.0,
+      "reps": 10
+    },
+    {
+      "exercise": "分体式坐姿划船（挂杠铃片，双手分划）",
+      "source_set_index": 48,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 20
+    },
+    {
+      "exercise": "分体式坐姿划船（挂杠铃片，双手分划）",
+      "source_set_index": 49,
+      "set_number_for_exercise": 2,
+      "weight_kg": 70.0,
+      "reps": 11
+    },
+    {
+      "exercise": "分体式高位下拉（挂杠铃片）",
+      "source_set_index": 50,
+      "set_number_for_exercise": 1,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "器械T杠划船",
+      "source_set_index": 51,
+      "set_number_for_exercise": 1,
+      "weight_kg": 20.0,
+      "reps": 12
+    },
+    {
+      "exercise": "器械提杠划船（反握）",
+      "source_set_index": 52,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 10
+    },
+    {
+      "exercise": "器械站姿后踢腿（挂杠铃片）",
+      "source_set_index": 53,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 60
+    },
+    {
+      "exercise": "器械俯卧后弯举（插片式）",
+      "source_set_index": 54,
+      "set_number_for_exercise": 1,
+      "weight_kg": 45.0,
+      "reps": 12
+    },
+    {
+      "exercise": "器械俯卧后弯举（插片式）",
+      "source_set_index": 55,
+      "set_number_for_exercise": 2,
+      "weight_kg": 50.0,
+      "reps": 8
+    },
+    {
+      "exercise": "单腿跪姿器械下蹬腿（挂杠铃片）",
+      "source_set_index": 56,
+      "set_number_for_exercise": 1,
+      "weight_kg": 25.0,
+      "reps": 14
+    },
+    {
+      "exercise": "单腿跪姿器械下蹬腿（挂杠铃片）",
+      "source_set_index": 57,
+      "set_number_for_exercise": 2,
+      "weight_kg": 40.0,
+      "reps": 12
+    },
+    {
+      "exercise": "倒蹬机（挂杠铃片）",
+      "source_set_index": 58,
+      "set_number_for_exercise": 1,
+      "weight_kg": 60.0,
+      "reps": 10
+    },
+    {
+      "exercise": "倒蹬机（挂杠铃片）",
+      "source_set_index": 59,
+      "set_number_for_exercise": 2,
+      "weight_kg": 100.0,
+      "reps": 10
+    },
+    {
+      "exercise": "坐姿蹬腿机（插片式）",
+      "source_set_index": 60,
+      "set_number_for_exercise": 1,
+      "weight_kg": 96.0,
+      "reps": 10
+    },
+    {
+      "exercise": "坐姿器械推胸（挂杠铃片，平推）",
+      "source_set_index": 61,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 9
+    },
+    {
+      "exercise": "深蹲（器械挂杠铃片）",
+      "source_set_index": 62,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 12
+    },
+    {
+      "exercise": "深蹲（器械挂杠铃片）",
+      "source_set_index": 63,
+      "set_number_for_exercise": 2,
+      "weight_kg": 60.0,
+      "reps": 12
+    },
+    {
+      "exercise": "龙门架绳索二头弯举",
+      "source_set_index": 64,
+      "set_number_for_exercise": 1,
+      "weight_kg": 18.0,
+      "reps": 12
+    },
+    {
+      "exercise": "龙门架绳索二头弯举",
+      "source_set_index": 65,
+      "set_number_for_exercise": 2,
+      "weight_kg": 25.0,
+      "reps": 5
+    },
+    {
+      "exercise": "史密斯卧推",
+      "source_set_index": 66,
+      "set_number_for_exercise": 1,
+      "weight_kg": 20.0,
+      "reps": 12
+    },
+    {
+      "exercise": "史密斯卧推",
+      "source_set_index": 67,
+      "set_number_for_exercise": 2,
+      "weight_kg": 70.0,
+      "reps": 3
+    },
+    {
+      "exercise": "史密斯卧推",
+      "source_set_index": 68,
+      "set_number_for_exercise": 3,
+      "weight_kg": 60.0,
+      "reps": 3
+    },
+    {
+      "exercise": "史密斯臀桥",
+      "source_set_index": 69,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 12
+    },
+    {
+      "exercise": "史密斯空杆俯身划船（半蹲贴腿滑杠）",
+      "source_set_index": 70,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0.0,
+      "reps": 12
+    },
+    {
+      "exercise": "自由杠铃俯身划船（半蹲贴腿滑杠）",
+      "source_set_index": 71,
+      "set_number_for_exercise": 1,
+      "weight_kg": 60.0,
+      "reps": 10
+    },
+    {
+      "exercise": "单腿辅助深蹲（扶器械）",
+      "source_set_index": 72,
+      "set_number_for_exercise": 1,
+      "weight_kg": 20.0,
+      "reps": 10
+    },
+    {
+      "exercise": "臀桥（挂腰带+杠铃片）",
+      "source_set_index": 73,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 12
+    },
+    {
+      "exercise": "正向哈克深蹲",
+      "source_set_index": 74,
+      "set_number_for_exercise": 1,
+      "weight_kg": 80.0,
+      "reps": 9
+    },
+    {
+      "exercise": "小龙门架绳索夹胸",
+      "source_set_index": 75,
+      "set_number_for_exercise": 1,
+      "weight_kg": 40.0,
+      "reps": 8
+    },
+    {
+      "exercise": "站姿W杠二头弯举",
+      "source_set_index": 76,
+      "set_number_for_exercise": 1,
+      "weight_kg": 25.0,
+      "reps": 12
+    },
+    {
+      "exercise": "坐姿哑铃推肩",
+      "source_set_index": 77,
+      "set_number_for_exercise": 1,
+      "weight_kg": 12.5,
+      "reps": 9
+    },
+    {
+      "exercise": "45°上斜俯卧哑铃飞鸟（自由哑铃）",
+      "source_set_index": 78,
+      "set_number_for_exercise": 1,
+      "weight_kg": 10.0,
+      "reps": 9
+    },
+    {
+      "exercise": "山羊挺身（抱10kg哑铃）",
+      "source_set_index": 79,
+      "set_number_for_exercise": 1,
+      "weight_kg": 10.0,
+      "reps": 10
+    },
+    {
+      "exercise": "罗马椅侧腹（左侧）",
+      "source_set_index": 80,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0,
+      "reps": 14
+    },
+    {
+      "exercise": "罗马椅侧腹（右侧）",
+      "source_set_index": 81,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0,
+      "reps": 21
+    },
+    {
+      "exercise": "器械悬垂举腿（自重）",
+      "source_set_index": 82,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0.0,
+      "reps": 22
+    },
+    {
+      "exercise": "山羊挺身（负重5kg）",
+      "source_set_index": 83,
+      "set_number_for_exercise": 1,
+      "weight_kg": 5.0,
+      "reps": 3
+    },
+    {
+      "exercise": "牧师凳二头弯举（直杆）",
+      "source_set_index": 84,
+      "set_number_for_exercise": 1,
+      "weight_kg": 15.0,
+      "reps": 5
+    },
+    {
+      "exercise": "器械悬垂举腿（负重5kg）",
+      "source_set_index": 85,
+      "set_number_for_exercise": 1,
+      "weight_kg": 5.0,
+      "reps": 3
+    },
+    {
+      "exercise": "俯身轨道式划船器",
+      "source_set_index": 86,
+      "set_number_for_exercise": 1,
+      "weight_kg": 30.0,
+      "reps": 7
+    },
+    {
+      "exercise": "卷腹",
+      "source_set_index": 87,
+      "set_number_for_exercise": 1,
+      "weight_kg": 0.0,
+      "reps": 18
+    }
+  ]
+}
