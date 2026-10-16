@@ -8,7 +8,8 @@
     "credential_scan": "No private-key blocks, GitHub token patterns, credential-bearing URLs or secret files found; explicit allowlist packaging, no personal workspace/config/db copied",
     "rpg": "Original 9.5095s clip fully decoded; portable functions render CJK PNG, CPU H264 and transparent QTRLE smoke clips; no full listening or cloud environment test",
     "skill_validation": "fitness-video-handoff, software-video-production and ssh-tencent-cloud-connect passed quick_validate",
-    "cloud_ssh": "Not attempted; credentials absent; private configuration required by receiving Agent",
+    "cloud_ssh": "Not attempted; host, SSH user and expected hostname supplied from pre-existing local SSH Skill per user request; authentication credentials remain private",
     "scene_request": "No fitness footage edited; this request is upload/prepare handoff only"
-  }
+  },
+  "update": "2026-10-16 user requested server address and SSH username in the Skill; documentation and bundle refreshed, functional code unchanged"
 }

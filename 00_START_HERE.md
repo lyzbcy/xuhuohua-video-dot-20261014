@@ -6,7 +6,7 @@
 2. 下载原素材29个分包；依[下载说明](下载说明.txt)、[分包清单](分包清单.csv)和SHA256清单核验、拼接8个ZIP。工具：`python tools/materials.py --input <分包目录> --output <工作目录>`。
 3. 在同一Release下载 `fitness-editing-kit-20261016-v0.5.7.zip` 与 `fitness-selected-stickers-20261016.zip`，按 `FITNESS_KIT_SHA256SUMS.txt` 校验，解压到同一工作目录。前者包括本文档、相对路径Skill、模板、RPG原图和可播放范例；后者含424张精选PNG及逐文件清单。
 4. `python tools/check_environment.py`检查环境；仅缺少的依赖按需安装。无需运行Windows桌面、无需NVENC，RPG模板有CPU编码路线。云端生图、生歌、TTS、SSH和耳听能力各自确认，不能用本机跑通过代替本机以外实测。
-5. 训练数据读取见[SSH与训练数据Skill](skills/ssh-tencent-cloud-connect/SKILL.md)。原素材文件名指向2026-10-06，先与原声/元信息核对日期，再只读取对应日。连接信息由用户私下提供，不在仓库里。
+5. 训练数据读取见[SSH与训练数据Skill](skills/ssh-tencent-cloud-connect/SKILL.md)，其中已记录服务器地址、SSH用户名与预期hostname。原素材文件名指向2026-10-06，先与原声/元信息核对日期，再只读取对应日。仅密码或私钥等认证信息由用户私下提供，不在仓库里。
 6. 本次先制作一张三栏构图示意让用户确认；随后制作带真人口播、声音、字幕和数据的代表样段。歌曲有多个候选就先供用户试听选择，再锁定音源。
 
 预览示意与歌曲选择是用户原文要求；不要增加整片逐组审批等旧SOP门槛。收到用户后续指令时按其最新要求继续。

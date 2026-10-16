@@ -10,13 +10,13 @@
     },
     {
       "path": "00_START_HERE.md",
-      "bytes": 2335,
-      "sha256": "a428c043bcd566e2480742ea47204878107487dc232c1b52740e5fd56ad90cfa"
+      "bytes": 2421,
+      "sha256": "cd68bda977beb43a8a26a47dfd5195d7a4ed09db3d374c40deb3de4e81fbcca3"
     },
     {
       "path": "README.md",
-      "bytes": 990,
-      "sha256": "6183a9c040bc4a5606f7adaf924c23a7250332ccb175d488735a061bab9ea8e9"
+      "bytes": 1050,
+      "sha256": "af082c83ac1f575112d3dc83d04205fe3753c22e0c2eb3dd1b2b6eff1c9fc422"
     },
     {
       "path": "SHA256SUMS.txt",
@@ -25,8 +25,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 4387,
-      "sha256": "2d5f2d18d9286a8ec1a717372318691ffb45f161f6d28ef978d8fb14565085dc"
+      "bytes": 4432,
+      "sha256": "f47d2f442712faaba0fe11e13f7fb5f898c644477c1c3554b6a5590c632c3162"
     },
     {
       "path": "agent.txt",
@@ -230,8 +230,8 @@
     },
     {
       "path": "skills/ssh-tencent-cloud-connect/SKILL.md",
-      "bytes": 3217,
-      "sha256": "e292c91ab8d93f60611c3734d53622a95f71e18862668cd749e1566ab3053dec"
+      "bytes": 3432,
+      "sha256": "81ffc906f28a49fdd38a26a52ea18c6c1bcb6e37f856cfc3db73e6f1f8fc378b"
     },
     {
       "path": "skills/ssh-tencent-cloud-connect/scripts/export_training_day.py",
@@ -286,5 +286,6 @@
     "private daily camera footage",
     "third-party reference media copies",
     "large AI model/runtime caches"
-  ]
+  ],
+  "handoff_revision": 2
 }

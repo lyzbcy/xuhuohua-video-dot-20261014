@@ -1,20 +1,25 @@
 ---
 name: ssh-tencent-cloud-connect
-description: 在用户私下提供连接信息后验证SSH服务器身份，只读获取指定拍摄日的训练组记录，为本仓库视频数据看板取证；不修改生产数据。
+description: 使用已记录的服务器地址与SSH用户名，在用户提供认证方式后验证服务器身份，只读获取指定拍摄日的训练组记录，为视频数据看板取证；不修改生产数据。
 ---
 
 # 训练数据只读连接 · 公开便携版
 
-由本机周五涵工作区的SSH连接Skill按本次任务裁减。未复制整份个人目录、真实主机地址、密码、私钥、Cookie或健康记录；服务器尚未在本任务中实连验证。
+由本机周五涵工作区的SSH连接Skill按本次任务裁减。依用户要求记录服务器地址与SSH用户名；未复制整份个人目录、密码、私钥、Cookie或健康记录。以下身份来自本机既有连接记录，服务器尚未在本任务中实连验证。
 
 ## 配置与身份
 
-请用户在私下对话或平台Secret中提供主机、登录用户、预期hostname和认证方式，不写进公开issue/仓库。SSH端口默认22。优先平台提供的私有key/SSH Agent；不要上传本机私钥，不把密码放命令行或日志。没有受支持的认证方式时向用户说明缺项，不宣称连接成功。
+- 服务器地址：`111.231.25.152`
+- SSH用户名：`root`
+- SSH端口：`22`
+- 预期hostname：`VM-0-8-ubuntu`
+
+地址和用户名已提供，不需要再次询问。仅认证方式（密码或私钥）由用户在私下对话或平台Secret中提供，不写进公开issue/仓库。优先平台提供的私有key/SSH Agent；不要上传本机私钥，不把密码放命令行或日志。没有受支持的认证方式时向用户说明缺项，不宣称连接成功。
 
 `scripts/read_training_day.py`用系统SSH，先核对`hostname`与`whoami`，再经标准输入发送只读Python解析器。保留主机密钥校验；首次`accept-new`不能代替用户核验指纹，指纹变化必须停下核实。
 
 ```bash
-python skills/ssh-tencent-cloud-connect/scripts/read_training_day.py --host "$SSH_TARGET_HOST" --user "$SSH_TARGET_USER" --expected-hostname "$SSH_EXPECTED_HOSTNAME" --key "$SSH_KEY_PATH" --date 2026-10-06 --out private-data/training-day.json
+python skills/ssh-tencent-cloud-connect/scripts/read_training_day.py --host 111.231.25.152 --user root --expected-hostname VM-0-8-ubuntu --key "$SSH_KEY_PATH" --date 2026-10-06 --out private-data/training-day.json
 ```
 
 未指定`--key`时使用SSH Agent/默认受支持的密钥。本工具启用BatchMode，不自动处理密码登录；密码路线需要平台安全交互能力，可在用户支持下手动SSH，再用下述只读解析器。不要为了免交互关掉安全校验或硬编码口令。
