@@ -6,7 +6,7 @@
 2. 下载原素材29个分包；依[下载说明](下载说明.txt)、[分包清单](分包清单.csv)和SHA256清单核验、拼接8个ZIP。工具：`python tools/materials.py --input <分包目录> --output <工作目录>`。
 3. 在同一Release下载 `fitness-editing-kit-20261016-v0.5.7.zip` 与 `fitness-selected-stickers-20261016.zip`，按 `FITNESS_KIT_SHA256SUMS.txt` 校验，解压到同一工作目录。前者包括本文档、相对路径Skill、模板、RPG原图和可播放范例；后者含424张精选PNG及逐文件清单。
 4. `python tools/check_environment.py`检查环境；仅缺少的依赖按需安装。无需运行Windows桌面、无需NVENC，RPG模板有CPU编码路线。云端生图、生歌、TTS、SSH和耳听能力各自确认，不能用本机跑通过代替本机以外实测。
-5. **本次训练数据已补齐，无需SSH**：直接读[data/training-2026-10-06.json](data/training-2026-10-06.json)和[使用说明](reference/训练数据使用说明.md)，共60个原始动作名称、87组，已按用户授权从服务器只读导出。Release也提供独立JSON及SHA256；不用再次索要密码。只有以后另有授权要重新取数时，才参考[SSH Skill](skills/ssh-tencent-cloud-connect/SKILL.md)。
+5. **训练数据和原备注已补齐，无需SSH**：读[data/training-2026-10-06.json](data/training-2026-10-06.json)（schema 2）与[使用说明](reference/训练数据使用说明.md)：60个原始动作名称、87条set记录、85条逐组备注和1条场次备注。`training_note`为原备注，`usage_notes`为导出说明。第28/31条存在次数未报/补记，按`data_review`核对，勿误算组数。Release也有独立JSON及SHA256，不用再次索要密码。仅以后另行授权取数才参考[SSH Skill](skills/ssh-tencent-cloud-connect/SKILL.md)。
 6. 本次先制作一张三栏构图示意让用户确认；随后制作带真人口播、声音、字幕和数据的代表样段。歌曲有多个候选就先供用户试听选择，再锁定音源。
 
 预览示意与歌曲选择是用户原文要求；不要增加整片逐组审批等旧SOP门槛。收到用户后续指令时按其最新要求继续。

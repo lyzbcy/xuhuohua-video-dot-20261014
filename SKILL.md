@@ -31,7 +31,7 @@ description: 为本仓库健身卡最后一天全器械训练长片与医院后�
 
 ## 数据、署名与隐私
 
-本次优先使用已经按用户授权只读导出的[data/training-2026-10-06.json](data/training-2026-10-06.json)：60个原始动作名称、87组，含重量/次数、按名称汇总和逐组明细；不需要dot连接SSH或再次索要密码。读[使用说明](reference/训练数据使用说明.md)，核对动作别名与实拍器械后再上屏，不用视频长度猜组数。只有另行授权重新取数才使用[只读SSH Skill](skills/ssh-tencent-cloud-connect/SKILL.md)。本包只含这份授权的单日训练摘录，不含完整健康数据库。
+本次用[data/training-2026-10-06.json](data/training-2026-10-06.json)（schema 2），无需dot连接SSH：60个原始名称、87条set记录，含85条逐组原备注与1条场次备注。`training_note`/`session_training_notes`是原备注，`usage_notes`仅为导出说明。第28条次数未报（原数值0）、第31条补记5次，可能是同一组；先按`data_review`与[使用说明](reference/训练数据使用说明.md)核对，不把占位0当真或擅自增加组数。核对别名、单双侧、杆重与实拍后上屏。只有另行授权取数才用[SSH Skill](skills/ssh-tencent-cloud-connect/SKILL.md)，本包不含完整健康数据库。
 
 用户要求署名“gpt 6 astra制作，大概消耗xx token，折算xx米”。执行Agent核实自己的实际模型与可得账单/用量。真实模型与原文不一致时先明确说明，不冒署astra；拿不到可靠token或成本就标无法核实，不能填写编造数字。
 

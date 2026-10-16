@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "date": "2026-10-06",
   "source": {
     "type": "live_ssh_read_only_export",
@@ -10,18 +10,43 @@
     },
     "server_identity_verified": true,
     "export_date": "2026-10-16",
-    "application_files_written_on_server": false
+    "application_files_written_on_server": false,
+    "training_notes_included": true,
+    "note_source_field": "note"
   },
   "summary": {
     "distinct_recorded_exercise_names": 60,
-    "recorded_sets": 87
+    "recorded_sets": 87,
+    "sets_with_training_notes": 85,
+    "session_training_note_count": 1,
+    "set_count_semantics": "source set entries; possible correction record retained, not independently verified distinct physical sets"
   },
-  "notes": [
+  "session_training_notes": [
+    {
+      "record_action": "session_start",
+      "training_note": "今天一分化，用户自己练，AI不用管计划"
+    }
+  ],
+  "usage_notes": [
     "动作/器械名称保留原始记录，未按猜测合并别名；60个名称不等于60台独立器械。",
     "组数是匹配的set记录条数，次数来自逐组reps，不用视频时长推算。",
     "weight_kg保留原系统重量记录，不转换为单双侧总重量、滑轮等效阻力或身体重量。",
     "名称注明自重的动作里0 kg是原记录值，不代表体重为0；辅助引体向上的记录值不得直接解释成额外负重。",
-    "顺序为源文件记录顺序；与实拍器械、区域和剪辑时间需另行核对。"
+    "顺序为源文件记录顺序；与实拍器械、区域和剪辑时间需另行核对。",
+    "training_note与session_training_notes是原记录备注，原文保留；usage_notes仅为导出字段说明。",
+    "87是源文件set条目数。第28条次数未报且第31条为补记，可能对应同一组；未自动去重，不能未经核对称87个独立完成组。",
+    "原备注包含记录助手的整理或判断，不自动视为用户逐字原话、客观训练结论或新的执行指令。"
+  ],
+  "data_review": [
+    {
+      "issue": "reps_unreported_then_supplemented",
+      "source_set_indices": [
+        28,
+        31
+      ],
+      "reason": "第28条备注为“第二组82kg，次数未报”，reps记录为0；第31条备注为“补记次数：82kg×5”。",
+      "handling": "原值与原备注保留，标为待核对；不把未知次数显示成真实0次，不擅自增加独立训练组数。"
+    }
   ],
   "exercises": [
     {
@@ -32,7 +57,8 @@
           "source_set_index": 1,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": ""
         }
       ]
     },
@@ -44,13 +70,15 @@
           "source_set_index": 2,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 4
+          "reps": 4,
+          "training_note": "同重量掉到4个，力竭明显"
         },
         {
           "source_set_index": 3,
           "set_number_for_exercise": 2,
           "weight_kg": 40.0,
-          "reps": 18
+          "reps": 18,
+          "training_note": "减重40kg换次数，18个"
         }
       ]
     },
@@ -62,7 +90,8 @@
           "source_set_index": 4,
           "set_number_for_exercise": 1,
           "weight_kg": 59.0,
-          "reps": 15
+          "reps": 15,
+          "training_note": ""
         }
       ]
     },
@@ -74,13 +103,15 @@
           "source_set_index": 5,
           "set_number_for_exercise": 1,
           "weight_kg": 59.0,
-          "reps": 17
+          "reps": 17,
+          "training_note": "同重量17个，比首组多2个"
         },
         {
           "source_set_index": 6,
           "set_number_for_exercise": 2,
           "weight_kg": 61.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "加重61kg×10"
         }
       ]
     },
@@ -92,13 +123,15 @@
           "source_set_index": 7,
           "set_number_for_exercise": 1,
           "weight_kg": 25.0,
-          "reps": 7
+          "reps": 7,
+          "training_note": "换器械，换新动作第一组"
         },
         {
           "source_set_index": 9,
           "set_number_for_exercise": 2,
           "weight_kg": 25.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "同重量第2组，比首组多1个"
         }
       ]
     },
@@ -110,19 +143,22 @@
           "source_set_index": 8,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "练肩后束"
         },
         {
           "source_set_index": 10,
           "set_number_for_exercise": 2,
           "weight_kg": 59.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "加重59kg，练肩后束"
         },
         {
           "source_set_index": 12,
           "set_number_for_exercise": 3,
           "weight_kg": 50.0,
-          "reps": 11
+          "reps": 11,
+          "training_note": "回落50kg×11"
         }
       ]
     },
@@ -134,19 +170,22 @@
           "source_set_index": 11,
           "set_number_for_exercise": 1,
           "weight_kg": 18.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "机械儿童玩具式器械，18kg×10"
         },
         {
           "source_set_index": 44,
           "set_number_for_exercise": 2,
           "weight_kg": 30.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "练肩中束，30kg×10，全身练到力竭期，手开始吃力飞不动了"
         },
         {
           "source_set_index": 45,
           "set_number_for_exercise": 3,
           "weight_kg": 30.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "同重量第2组30kg×10，力竭期维持"
         }
       ]
     },
@@ -158,7 +197,8 @@
           "source_set_index": 13,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 9
+          "reps": 9,
+          "training_note": "开胸第一组"
         }
       ]
     },
@@ -170,13 +210,15 @@
           "source_set_index": 14,
           "set_number_for_exercise": 1,
           "weight_kg": 20.0,
-          "reps": 3
+          "reps": 3,
+          "training_note": "辅助20kg只做3个，前面动作把能量榨干了，力竭明显"
         },
         {
           "source_set_index": 15,
           "set_number_for_exercise": 2,
           "weight_kg": 50.0,
-          "reps": 11
+          "reps": 11,
+          "training_note": "加大辅助50kg×11，力竭后靠辅助堆容量"
         }
       ]
     },
@@ -188,13 +230,15 @@
           "source_set_index": 16,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "V字把手，练背"
         },
         {
           "source_set_index": 17,
           "set_number_for_exercise": 2,
           "weight_kg": 45.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "加重45kg×10"
         }
       ]
     },
@@ -206,7 +250,8 @@
           "source_set_index": 18,
           "set_number_for_exercise": 1,
           "weight_kg": 45.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "双头绳三头下压"
         }
       ]
     },
@@ -218,7 +263,8 @@
           "source_set_index": 19,
           "set_number_for_exercise": 1,
           "weight_kg": 0.0,
-          "reps": 2
+          "reps": 2,
+          "training_note": "自重窄距对卧，能量榨干只剩2个"
         }
       ]
     },
@@ -230,13 +276,15 @@
           "source_set_index": 20,
           "set_number_for_exercise": 1,
           "weight_kg": 20.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "练肩中束，轻重量多次数（语音识别可能有误，动作名按坐姿器械飞鸟记录）"
         },
         {
           "source_set_index": 21,
           "set_number_for_exercise": 2,
           "weight_kg": 34.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "肩中束，20×20热完上34kg×10"
         }
       ]
     },
@@ -248,13 +296,15 @@
           "source_set_index": 22,
           "set_number_for_exercise": 1,
           "weight_kg": 32.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "机械划船插片式，练背"
         },
         {
           "source_set_index": 23,
           "set_number_for_exercise": 2,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "同动作加重50kg×8"
         }
       ]
     },
@@ -266,13 +316,15 @@
           "source_set_index": 24,
           "set_number_for_exercise": 1,
           "weight_kg": 17.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "单边17kg×20，轻重量热身"
         },
         {
           "source_set_index": 25,
           "set_number_for_exercise": 2,
           "weight_kg": 21.0,
-          "reps": 14
+          "reps": 14,
+          "training_note": "同器械加重21kg×14"
         }
       ]
     },
@@ -284,13 +336,15 @@
           "source_set_index": 26,
           "set_number_for_exercise": 1,
           "weight_kg": 36.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "单边36kg×8，重量比之前稍上一点"
         },
         {
           "source_set_index": 37,
           "set_number_for_exercise": 2,
           "weight_kg": 25.0,
-          "reps": 9
+          "reps": 9,
+          "training_note": "平推轨迹的插片式推胸25kg×9，用户自评偏低（自认应能控40-50kg），全身练到最后力竭所致"
         }
       ]
     },
@@ -302,19 +356,22 @@
           "source_set_index": 27,
           "set_number_for_exercise": 1,
           "weight_kg": 86.0,
-          "reps": 5
+          "reps": 5,
+          "training_note": "86kg×5，重量拉很高"
         },
         {
           "source_set_index": 28,
           "set_number_for_exercise": 2,
           "weight_kg": 82.0,
-          "reps": 0
+          "reps": 0,
+          "training_note": "第二组82kg，次数未报"
         },
         {
           "source_set_index": 31,
           "set_number_for_exercise": 3,
           "weight_kg": 82.0,
-          "reps": 5
+          "reps": 5,
+          "training_note": "补记次数：82kg×5"
         }
       ]
     },
@@ -326,13 +383,15 @@
           "source_set_index": 29,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "练臀腿"
         },
         {
           "source_set_index": 32,
           "set_number_for_exercise": 2,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "第2组，比首组40×12加重"
         }
       ]
     },
@@ -344,7 +403,8 @@
           "source_set_index": 30,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "练臀腿"
         }
       ]
     },
@@ -356,13 +416,15 @@
           "source_set_index": 33,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "左右各挂15kg共30kg×12，练胸"
         },
         {
           "source_set_index": 34,
           "set_number_for_exercise": 2,
           "weight_kg": 40.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "两边各挂20kg共40kg×10，加重"
         }
       ]
     },
@@ -374,13 +436,15 @@
           "source_set_index": 35,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 2
+          "reps": 2,
+          "training_note": "斜向上推的低位轨迹，两边各挂15kg共30kg，只做2个，换轨迹不适应"
         },
         {
           "source_set_index": 36,
           "set_number_for_exercise": 2,
           "weight_kg": 30.0,
-          "reps": 4
+          "reps": 4,
+          "training_note": "同重量第2组×4，轨迹不适应但找到点感觉"
         }
       ]
     },
@@ -392,7 +456,8 @@
           "source_set_index": 38,
           "set_number_for_exercise": 1,
           "weight_kg": 45.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "普通正常轨迹的高位下拉45kg×12（区别于分体式82kg那台）"
         }
       ]
     },
@@ -404,7 +469,8 @@
           "source_set_index": 39,
           "set_number_for_exercise": 1,
           "weight_kg": 45.0,
-          "reps": 15
+          "reps": 15,
+          "training_note": "掌心向上=反握，45kg×15（9/8同款反握45×17，差2个）"
         }
       ]
     },
@@ -416,7 +482,8 @@
           "source_set_index": 40,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "用户口述「大剪刀」，标准名待确认；两边各挂15kg共30kg×20，练背"
         }
       ]
     },
@@ -428,7 +495,8 @@
           "source_set_index": 41,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "两边各挂25kg共50kg×8，手掌状态受限（消息未说完）"
         }
       ]
     },
@@ -440,7 +508,8 @@
           "source_set_index": 42,
           "set_number_for_exercise": 1,
           "weight_kg": 10.0,
-          "reps": 15
+          "reps": 15,
+          "training_note": "两边各挂5kg共10kg×15，练肩前束，轻重量高次数收前束"
         }
       ]
     },
@@ -452,7 +521,8 @@
           "source_set_index": 43,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "挂40kg杠铃片×12，腿弯举收尾"
         }
       ]
     },
@@ -464,13 +534,15 @@
           "source_set_index": 46,
           "set_number_for_exercise": 1,
           "weight_kg": 60.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "站姿从上往下夹，练下胸方向，60kg×10"
         },
         {
           "source_set_index": 47,
           "set_number_for_exercise": 2,
           "weight_kg": 60.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "同重量60kg×10，力竭期稳定维持"
         }
       ]
     },
@@ -482,13 +554,15 @@
           "source_set_index": 48,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 20
+          "reps": 20,
+          "training_note": "双手分开划的分体式，两边各挂20kg共40kg，左右各20次"
         },
         {
           "source_set_index": 49,
           "set_number_for_exercise": 2,
           "weight_kg": 70.0,
-          "reps": 11
+          "reps": 11,
+          "training_note": "同器械加重，两边各挂35kg共70kg，左右各11次（用户口述「十一千」）"
         }
       ]
     },
@@ -500,7 +574,8 @@
           "source_set_index": 50,
           "set_number_for_exercise": 1,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "垫背式，两边各挂25kg共50kg，双手各8次，从前往后拉（区别于插片式分体高位下拉86/82那台）"
         }
       ]
     },
@@ -512,7 +587,8 @@
           "source_set_index": 51,
           "set_number_for_exercise": 1,
           "weight_kg": 20.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "力竭期轻重量收尾"
         }
       ]
     },
@@ -524,7 +600,8 @@
           "source_set_index": 52,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "反握（用户口述「反地柜」=反握），30kg×10"
         }
       ]
     },
@@ -536,7 +613,8 @@
           "source_set_index": 53,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 60
+          "reps": 60,
+          "training_note": "两边各挂15kg共30kg，左右各踢60次（用户口述「获踢了60」），重量选太大，实际偏重"
         }
       ]
     },
@@ -548,13 +626,15 @@
           "source_set_index": 54,
           "set_number_for_exercise": 1,
           "weight_kg": 45.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "俯卧位插片式45kg×12，用户自述后悔选太重"
         },
         {
           "source_set_index": 55,
           "set_number_for_exercise": 2,
           "weight_kg": 50.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "同动作加重50kg×8，重量偏大"
         }
       ]
     },
@@ -566,13 +646,15 @@
           "source_set_index": 56,
           "set_number_for_exercise": 1,
           "weight_kg": 25.0,
-          "reps": 14
+          "reps": 14,
+          "training_note": "单腿跪姿、另一腿蹲马步90°向下蹬的圆弧轨迹，发力感在臀侧，挂25kg杠铃片左右各14次；用户自述重量挂了25kg左右"
         },
         {
           "source_set_index": 57,
           "set_number_for_exercise": 2,
           "weight_kg": 40.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "第二组加重到40kg左右，左右各12次"
         }
       ]
     },
@@ -584,13 +666,15 @@
           "source_set_index": 58,
           "set_number_for_exercise": 1,
           "weight_kg": 60.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "用户口述「倒灯」=倒蹬，60kg×10，力量储备充足（PR 140×12）"
         },
         {
           "source_set_index": 59,
           "set_number_for_exercise": 2,
           "weight_kg": 100.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "60×10热完上100×10，与9/3蹬腿机100×13同重量级"
         }
       ]
     },
@@ -602,7 +686,8 @@
           "source_set_index": 60,
           "set_number_for_exercise": 1,
           "weight_kg": 96.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "96kg×10，接在100×10之后回落重量"
         }
       ]
     },
@@ -614,7 +699,8 @@
           "source_set_index": 61,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 9
+          "reps": 9,
+          "training_note": "平推轨迹挂片式，两边各挂20kg共40kg×9"
         }
       ]
     },
@@ -626,13 +712,15 @@
           "source_set_index": 62,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "佩戴腰带，器械深蹲，两边各挂15kg共30kg×12"
         },
         {
           "source_set_index": 63,
           "set_number_for_exercise": 2,
           "weight_kg": 60.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "左右各挂30kg共60kg×12，比首组30kg翻倍加重"
         }
       ]
     },
@@ -644,13 +732,15 @@
           "source_set_index": 64,
           "set_number_for_exercise": 1,
           "weight_kg": 18.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "二头收尾，力竭期轻重量"
         },
         {
           "source_set_index": 65,
           "set_number_for_exercise": 2,
           "weight_kg": 25.0,
-          "reps": 5
+          "reps": 5,
+          "training_note": "25kg×5，二头彻底力竭"
         }
       ]
     },
@@ -662,19 +752,22 @@
           "source_set_index": 66,
           "set_number_for_exercise": 1,
           "weight_kg": 20.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "空杆×12热身（用户口述「烘干」=空杆），饭后续练"
         },
         {
           "source_set_index": 67,
           "set_number_for_exercise": 2,
           "weight_kg": 70.0,
-          "reps": 3
+          "reps": 3,
+          "training_note": "70kg×3，力竭期重训，空杆热身后直接上70"
         },
         {
           "source_set_index": 68,
           "set_number_for_exercise": 3,
           "weight_kg": 60.0,
-          "reps": 3
+          "reps": 3,
+          "training_note": "回落60kg×3，力竭期降到只剩3个"
         }
       ]
     },
@@ -686,7 +779,8 @@
           "source_set_index": 69,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "两边各挂15kg共30kg×12，杆自重未计（史密斯机杆重未知，沿用6/19记录惯例）"
         }
       ]
     },
@@ -698,7 +792,8 @@
           "source_set_index": 70,
           "set_number_for_exercise": 1,
           "weight_kg": 0.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "半蹲位，空杆沿膝盖滑到大腿根部的俯身划船（练背+下背稳定），史密斯空杆估重15-20kg（用户自估可能30kg，杆重未标注，按惯例记挂片/估算=0另注）"
         }
       ]
     },
@@ -710,7 +805,8 @@
           "source_set_index": 71,
           "set_number_for_exercise": 1,
           "weight_kg": 60.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "自由杠铃非史密斯，两边各挂15kg共30kg片+杆约60kg（用户自估总重），×10，动作稍不标准"
         }
       ]
     },
@@ -722,7 +818,8 @@
           "source_set_index": 72,
           "set_number_for_exercise": 1,
           "weight_kg": 20.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "单腿各深蹲10次，一手扶器械，一腿架着另一腿90°立起；器械未放配重，自重+扶力感觉约20kg，双腿各10次"
         }
       ]
     },
@@ -734,7 +831,8 @@
           "source_set_index": 73,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "挂腰带臀桥，两边各挂15kg共30kg（片重，杆重未计）×12"
         }
       ]
     },
@@ -746,7 +844,8 @@
           "source_set_index": 74,
           "set_number_for_exercise": 1,
           "weight_kg": 80.0,
-          "reps": 9
+          "reps": 9,
+          "training_note": "80kg×9，与9/22重返后80×12相比差3个，力竭期"
         }
       ]
     },
@@ -758,7 +857,8 @@
           "source_set_index": 75,
           "set_number_for_exercise": 1,
           "weight_kg": 40.0,
-          "reps": 8
+          "reps": 8,
+          "training_note": "两边各挂20kg共40kg×8，绳索夹胸"
         }
       ]
     },
@@ -770,7 +870,8 @@
           "source_set_index": 76,
           "set_number_for_exercise": 1,
           "weight_kg": 25.0,
-          "reps": 12
+          "reps": 12,
+          "training_note": "W型杠铃25kg×12，按杠型分类记录"
         }
       ]
     },
@@ -782,7 +883,8 @@
           "source_set_index": 77,
           "set_number_for_exercise": 1,
           "weight_kg": 12.5,
-          "reps": 9
+          "reps": 9,
+          "training_note": "自由哑铃坐姿推肩，单边12.5kg各9次"
         }
       ]
     },
@@ -794,7 +896,8 @@
           "source_set_index": 78,
           "set_number_for_exercise": 1,
           "weight_kg": 10.0,
-          "reps": 9
+          "reps": 9,
+          "training_note": "趴在45°斜凳上，左右手各10kg×9，练肩（用户口述「练金」=练肩）"
         }
       ]
     },
@@ -806,7 +909,8 @@
           "source_set_index": 79,
           "set_number_for_exercise": 1,
           "weight_kg": 10.0,
-          "reps": 10
+          "reps": 10,
+          "training_note": "负重山羊挺身，抱10kg哑铃×10"
         }
       ]
     },
@@ -818,7 +922,8 @@
           "source_set_index": 80,
           "set_number_for_exercise": 1,
           "weight_kg": 0,
-          "reps": 14
+          "reps": 14,
+          "training_note": "罗马椅侧腹左侧14下"
         }
       ]
     },
@@ -830,7 +935,8 @@
           "source_set_index": 81,
           "set_number_for_exercise": 1,
           "weight_kg": 0,
-          "reps": 21
+          "reps": 21,
+          "training_note": "罗马椅侧腹右侧21下"
         }
       ]
     },
@@ -842,7 +948,8 @@
           "source_set_index": 82,
           "set_number_for_exercise": 1,
           "weight_kg": 0.0,
-          "reps": 22
+          "reps": 22,
+          "training_note": "自重悬垂举腿22下"
         }
       ]
     },
@@ -854,7 +961,8 @@
           "source_set_index": 83,
           "set_number_for_exercise": 1,
           "weight_kg": 5.0,
-          "reps": 3
+          "reps": 3,
+          "training_note": "负重5kg只做3个，力竭到底，无休息连续作战"
         }
       ]
     },
@@ -866,7 +974,8 @@
           "source_set_index": 84,
           "set_number_for_exercise": 1,
           "weight_kg": 15.0,
-          "reps": 5
+          "reps": 5,
+          "training_note": "直杆杠铃15kg×5，按杠型分类记录（直杆杠铃）"
         }
       ]
     },
@@ -878,7 +987,8 @@
           "source_set_index": 85,
           "set_number_for_exercise": 1,
           "weight_kg": 5.0,
-          "reps": 3
+          "reps": 3,
+          "training_note": "负重悬垂举腿（挂5kg）×3，力竭做不动了，未休息连续作战"
         }
       ]
     },
@@ -890,7 +1000,8 @@
           "source_set_index": 86,
           "set_number_for_exercise": 1,
           "weight_kg": 30.0,
-          "reps": 7
+          "reps": 7,
+          "training_note": "人靠在斜垫上俯身，杠铃沿轨道上滑，类似史密斯轨迹；两边各挂15kg共30kg×7（与7/25同款器械，当天30×15）"
         }
       ]
     },
@@ -902,7 +1013,8 @@
           "source_set_index": 87,
           "set_number_for_exercise": 1,
           "weight_kg": 0.0,
-          "reps": 18
+          "reps": 18,
+          "training_note": "力竭期垫上/自重卷腹×18，只能做18个"
         }
       ]
     }
@@ -913,609 +1025,696 @@
       "source_set_index": 1,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": ""
     },
     {
       "exercise": "器械坐姿卷腹（插片式）",
       "source_set_index": 2,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 4
+      "reps": 4,
+      "training_note": "同重量掉到4个，力竭明显"
     },
     {
       "exercise": "器械坐姿卷腹（插片式）",
       "source_set_index": 3,
       "set_number_for_exercise": 2,
       "weight_kg": 40.0,
-      "reps": 18
+      "reps": 18,
+      "training_note": "减重40kg换次数，18个"
     },
     {
       "exercise": "坐姿器械举腿（插片式）",
       "source_set_index": 4,
       "set_number_for_exercise": 1,
       "weight_kg": 59.0,
-      "reps": 15
+      "reps": 15,
+      "training_note": ""
     },
     {
       "exercise": "坐姿器械弯举（插片式）",
       "source_set_index": 5,
       "set_number_for_exercise": 1,
       "weight_kg": 59.0,
-      "reps": 17
+      "reps": 17,
+      "training_note": "同重量17个，比首组多2个"
     },
     {
       "exercise": "坐姿器械弯举（插片式）",
       "source_set_index": 6,
       "set_number_for_exercise": 2,
       "weight_kg": 61.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "加重61kg×10"
     },
     {
       "exercise": "器械二头弯举（插片式）",
       "source_set_index": 7,
       "set_number_for_exercise": 1,
       "weight_kg": 25.0,
-      "reps": 7
+      "reps": 7,
+      "training_note": "换器械，换新动作第一组"
     },
     {
       "exercise": "蝴蝶机反向飞鸟",
       "source_set_index": 8,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "练肩后束"
     },
     {
       "exercise": "器械二头弯举（插片式）",
       "source_set_index": 9,
       "set_number_for_exercise": 2,
       "weight_kg": 25.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "同重量第2组，比首组多1个"
     },
     {
       "exercise": "蝴蝶机反向飞鸟",
       "source_set_index": 10,
       "set_number_for_exercise": 2,
       "weight_kg": 59.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "加重59kg，练肩后束"
     },
     {
       "exercise": "站姿器械飞鸟",
       "source_set_index": 11,
       "set_number_for_exercise": 1,
       "weight_kg": 18.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "机械儿童玩具式器械，18kg×10"
     },
     {
       "exercise": "蝴蝶机反向飞鸟",
       "source_set_index": 12,
       "set_number_for_exercise": 3,
       "weight_kg": 50.0,
-      "reps": 11
+      "reps": 11,
+      "training_note": "回落50kg×11"
     },
     {
       "exercise": "蝴蝶机夹胸",
       "source_set_index": 13,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 9
+      "reps": 9,
+      "training_note": "开胸第一组"
     },
     {
       "exercise": "辅助引体向上",
       "source_set_index": 14,
       "set_number_for_exercise": 1,
       "weight_kg": 20.0,
-      "reps": 3
+      "reps": 3,
+      "training_note": "辅助20kg只做3个，前面动作把能量榨干了，力竭明显"
     },
     {
       "exercise": "辅助引体向上",
       "source_set_index": 15,
       "set_number_for_exercise": 2,
       "weight_kg": 50.0,
-      "reps": 11
+      "reps": 11,
+      "training_note": "加大辅助50kg×11，力竭后靠辅助堆容量"
     },
     {
       "exercise": "龙门架绳索划船（V把）",
       "source_set_index": 16,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "V字把手，练背"
     },
     {
       "exercise": "龙门架绳索划船（V把）",
       "source_set_index": 17,
       "set_number_for_exercise": 2,
       "weight_kg": 45.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "加重45kg×10"
     },
     {
       "exercise": "绳索下压（龙门架双头绳）",
       "source_set_index": 18,
       "set_number_for_exercise": 1,
       "weight_kg": 45.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "双头绳三头下压"
     },
     {
       "exercise": "对卧窄距引体向上（自重）",
       "source_set_index": 19,
       "set_number_for_exercise": 1,
       "weight_kg": 0.0,
-      "reps": 2
+      "reps": 2,
+      "training_note": "自重窄距对卧，能量榨干只剩2个"
     },
     {
       "exercise": "坐姿器械飞鸟",
       "source_set_index": 20,
       "set_number_for_exercise": 1,
       "weight_kg": 20.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "练肩中束，轻重量多次数（语音识别可能有误，动作名按坐姿器械飞鸟记录）"
     },
     {
       "exercise": "坐姿器械飞鸟",
       "source_set_index": 21,
       "set_number_for_exercise": 2,
       "weight_kg": 34.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "肩中束，20×20热完上34kg×10"
     },
     {
       "exercise": "坐姿器械划船（插片式）",
       "source_set_index": 22,
       "set_number_for_exercise": 1,
       "weight_kg": 32.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "机械划船插片式，练背"
     },
     {
       "exercise": "坐姿器械划船（插片式）",
       "source_set_index": 23,
       "set_number_for_exercise": 2,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "同动作加重50kg×8"
     },
     {
       "exercise": "坐姿器械推肩（插片式）",
       "source_set_index": 24,
       "set_number_for_exercise": 1,
       "weight_kg": 17.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "单边17kg×20，轻重量热身"
     },
     {
       "exercise": "坐姿器械推肩（插片式）",
       "source_set_index": 25,
       "set_number_for_exercise": 2,
       "weight_kg": 21.0,
-      "reps": 14
+      "reps": 14,
+      "training_note": "同器械加重21kg×14"
     },
     {
       "exercise": "坐姿器械推胸（插片式）",
       "source_set_index": 26,
       "set_number_for_exercise": 1,
       "weight_kg": 36.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "单边36kg×8，重量比之前稍上一点"
     },
     {
       "exercise": "分体式高位下拉（插片式）",
       "source_set_index": 27,
       "set_number_for_exercise": 1,
       "weight_kg": 86.0,
-      "reps": 5
+      "reps": 5,
+      "training_note": "86kg×5，重量拉很高"
     },
     {
       "exercise": "分体式高位下拉（插片式）",
       "source_set_index": 28,
       "set_number_for_exercise": 2,
       "weight_kg": 82.0,
-      "reps": 0
+      "reps": 0,
+      "training_note": "第二组82kg，次数未报"
     },
     {
       "exercise": "坐姿器械髋内收（插片式）",
       "source_set_index": 29,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "练臀腿"
     },
     {
       "exercise": "坐姿器械髋外展（插片式）",
       "source_set_index": 30,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "练臀腿"
     },
     {
       "exercise": "分体式高位下拉（插片式）",
       "source_set_index": 31,
       "set_number_for_exercise": 3,
       "weight_kg": 82.0,
-      "reps": 5
+      "reps": 5,
+      "training_note": "补记次数：82kg×5"
     },
     {
       "exercise": "坐姿器械髋内收（插片式）",
       "source_set_index": 32,
       "set_number_for_exercise": 2,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "第2组，比首组40×12加重"
     },
     {
       "exercise": "分体式卧推（挂杠铃片）",
       "source_set_index": 33,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "左右各挂15kg共30kg×12，练胸"
     },
     {
       "exercise": "分体式卧推（挂杠铃片）",
       "source_set_index": 34,
       "set_number_for_exercise": 2,
       "weight_kg": 40.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "两边各挂20kg共40kg×10，加重"
     },
     {
       "exercise": "器械推胸（挂杠铃片式，斜上推低位）",
       "source_set_index": 35,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 2
+      "reps": 2,
+      "training_note": "斜向上推的低位轨迹，两边各挂15kg共30kg，只做2个，换轨迹不适应"
     },
     {
       "exercise": "器械推胸（挂杠铃片式，斜上推低位）",
       "source_set_index": 36,
       "set_number_for_exercise": 2,
       "weight_kg": 30.0,
-      "reps": 4
+      "reps": 4,
+      "training_note": "同重量第2组×4，轨迹不适应但找到点感觉"
     },
     {
       "exercise": "坐姿器械推胸（插片式）",
       "source_set_index": 37,
       "set_number_for_exercise": 2,
       "weight_kg": 25.0,
-      "reps": 9
+      "reps": 9,
+      "training_note": "平推轨迹的插片式推胸25kg×9，用户自评偏低（自认应能控40-50kg），全身练到最后力竭所致"
     },
     {
       "exercise": "高位下拉（对握/正常握距）",
       "source_set_index": 38,
       "set_number_for_exercise": 1,
       "weight_kg": 45.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "普通正常轨迹的高位下拉45kg×12（区别于分体式82kg那台）"
     },
     {
       "exercise": "坐姿器械划船（插片式，反握）",
       "source_set_index": 39,
       "set_number_for_exercise": 1,
       "weight_kg": 45.0,
-      "reps": 15
+      "reps": 15,
+      "training_note": "掌心向上=反握，45kg×15（9/8同款反握45×17，差2个）"
     },
     {
       "exercise": "坐姿划船（挂杠铃片，大剪刀手柄）",
       "source_set_index": 40,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "用户口述「大剪刀」，标准名待确认；两边各挂15kg共30kg×20，练背"
     },
     {
       "exercise": "大剪刀交叉下拉（挂杠铃片）",
       "source_set_index": 41,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "两边各挂25kg共50kg×8，手掌状态受限（消息未说完）"
     },
     {
       "exercise": "坐姿器械推肩（挂杠铃片）",
       "source_set_index": 42,
       "set_number_for_exercise": 1,
       "weight_kg": 10.0,
-      "reps": 15
+      "reps": 15,
+      "training_note": "两边各挂5kg共10kg×15，练肩前束，轻重量高次数收前束"
     },
     {
       "exercise": "坐姿腿弯举（挂杠铃片）",
       "source_set_index": 43,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "挂40kg杠铃片×12，腿弯举收尾"
     },
     {
       "exercise": "站姿器械飞鸟",
       "source_set_index": 44,
       "set_number_for_exercise": 2,
       "weight_kg": 30.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "练肩中束，30kg×10，全身练到力竭期，手开始吃力飞不动了"
     },
     {
       "exercise": "站姿器械飞鸟",
       "source_set_index": 45,
       "set_number_for_exercise": 3,
       "weight_kg": 30.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "同重量第2组30kg×10，力竭期维持"
     },
     {
       "exercise": "站姿器械胸飞鸟（从上往下夹）",
       "source_set_index": 46,
       "set_number_for_exercise": 1,
       "weight_kg": 60.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "站姿从上往下夹，练下胸方向，60kg×10"
     },
     {
       "exercise": "站姿器械胸飞鸟（从上往下夹）",
       "source_set_index": 47,
       "set_number_for_exercise": 2,
       "weight_kg": 60.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "同重量60kg×10，力竭期稳定维持"
     },
     {
       "exercise": "分体式坐姿划船（挂杠铃片，双手分划）",
       "source_set_index": 48,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 20
+      "reps": 20,
+      "training_note": "双手分开划的分体式，两边各挂20kg共40kg，左右各20次"
     },
     {
       "exercise": "分体式坐姿划船（挂杠铃片，双手分划）",
       "source_set_index": 49,
       "set_number_for_exercise": 2,
       "weight_kg": 70.0,
-      "reps": 11
+      "reps": 11,
+      "training_note": "同器械加重，两边各挂35kg共70kg，左右各11次（用户口述「十一千」）"
     },
     {
       "exercise": "分体式高位下拉（挂杠铃片）",
       "source_set_index": 50,
       "set_number_for_exercise": 1,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "垫背式，两边各挂25kg共50kg，双手各8次，从前往后拉（区别于插片式分体高位下拉86/82那台）"
     },
     {
       "exercise": "器械T杠划船",
       "source_set_index": 51,
       "set_number_for_exercise": 1,
       "weight_kg": 20.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "力竭期轻重量收尾"
     },
     {
       "exercise": "器械提杠划船（反握）",
       "source_set_index": 52,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "反握（用户口述「反地柜」=反握），30kg×10"
     },
     {
       "exercise": "器械站姿后踢腿（挂杠铃片）",
       "source_set_index": 53,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 60
+      "reps": 60,
+      "training_note": "两边各挂15kg共30kg，左右各踢60次（用户口述「获踢了60」），重量选太大，实际偏重"
     },
     {
       "exercise": "器械俯卧后弯举（插片式）",
       "source_set_index": 54,
       "set_number_for_exercise": 1,
       "weight_kg": 45.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "俯卧位插片式45kg×12，用户自述后悔选太重"
     },
     {
       "exercise": "器械俯卧后弯举（插片式）",
       "source_set_index": 55,
       "set_number_for_exercise": 2,
       "weight_kg": 50.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "同动作加重50kg×8，重量偏大"
     },
     {
       "exercise": "单腿跪姿器械下蹬腿（挂杠铃片）",
       "source_set_index": 56,
       "set_number_for_exercise": 1,
       "weight_kg": 25.0,
-      "reps": 14
+      "reps": 14,
+      "training_note": "单腿跪姿、另一腿蹲马步90°向下蹬的圆弧轨迹，发力感在臀侧，挂25kg杠铃片左右各14次；用户自述重量挂了25kg左右"
     },
     {
       "exercise": "单腿跪姿器械下蹬腿（挂杠铃片）",
       "source_set_index": 57,
       "set_number_for_exercise": 2,
       "weight_kg": 40.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "第二组加重到40kg左右，左右各12次"
     },
     {
       "exercise": "倒蹬机（挂杠铃片）",
       "source_set_index": 58,
       "set_number_for_exercise": 1,
       "weight_kg": 60.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "用户口述「倒灯」=倒蹬，60kg×10，力量储备充足（PR 140×12）"
     },
     {
       "exercise": "倒蹬机（挂杠铃片）",
       "source_set_index": 59,
       "set_number_for_exercise": 2,
       "weight_kg": 100.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "60×10热完上100×10，与9/3蹬腿机100×13同重量级"
     },
     {
       "exercise": "坐姿蹬腿机（插片式）",
       "source_set_index": 60,
       "set_number_for_exercise": 1,
       "weight_kg": 96.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "96kg×10，接在100×10之后回落重量"
     },
     {
       "exercise": "坐姿器械推胸（挂杠铃片，平推）",
       "source_set_index": 61,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 9
+      "reps": 9,
+      "training_note": "平推轨迹挂片式，两边各挂20kg共40kg×9"
     },
     {
       "exercise": "深蹲（器械挂杠铃片）",
       "source_set_index": 62,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "佩戴腰带，器械深蹲，两边各挂15kg共30kg×12"
     },
     {
       "exercise": "深蹲（器械挂杠铃片）",
       "source_set_index": 63,
       "set_number_for_exercise": 2,
       "weight_kg": 60.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "左右各挂30kg共60kg×12，比首组30kg翻倍加重"
     },
     {
       "exercise": "龙门架绳索二头弯举",
       "source_set_index": 64,
       "set_number_for_exercise": 1,
       "weight_kg": 18.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "二头收尾，力竭期轻重量"
     },
     {
       "exercise": "龙门架绳索二头弯举",
       "source_set_index": 65,
       "set_number_for_exercise": 2,
       "weight_kg": 25.0,
-      "reps": 5
+      "reps": 5,
+      "training_note": "25kg×5，二头彻底力竭"
     },
     {
       "exercise": "史密斯卧推",
       "source_set_index": 66,
       "set_number_for_exercise": 1,
       "weight_kg": 20.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "空杆×12热身（用户口述「烘干」=空杆），饭后续练"
     },
     {
       "exercise": "史密斯卧推",
       "source_set_index": 67,
       "set_number_for_exercise": 2,
       "weight_kg": 70.0,
-      "reps": 3
+      "reps": 3,
+      "training_note": "70kg×3，力竭期重训，空杆热身后直接上70"
     },
     {
       "exercise": "史密斯卧推",
       "source_set_index": 68,
       "set_number_for_exercise": 3,
       "weight_kg": 60.0,
-      "reps": 3
+      "reps": 3,
+      "training_note": "回落60kg×3，力竭期降到只剩3个"
     },
     {
       "exercise": "史密斯臀桥",
       "source_set_index": 69,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "两边各挂15kg共30kg×12，杆自重未计（史密斯机杆重未知，沿用6/19记录惯例）"
     },
     {
       "exercise": "史密斯空杆俯身划船（半蹲贴腿滑杠）",
       "source_set_index": 70,
       "set_number_for_exercise": 1,
       "weight_kg": 0.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "半蹲位，空杆沿膝盖滑到大腿根部的俯身划船（练背+下背稳定），史密斯空杆估重15-20kg（用户自估可能30kg，杆重未标注，按惯例记挂片/估算=0另注）"
     },
     {
       "exercise": "自由杠铃俯身划船（半蹲贴腿滑杠）",
       "source_set_index": 71,
       "set_number_for_exercise": 1,
       "weight_kg": 60.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "自由杠铃非史密斯，两边各挂15kg共30kg片+杆约60kg（用户自估总重），×10，动作稍不标准"
     },
     {
       "exercise": "单腿辅助深蹲（扶器械）",
       "source_set_index": 72,
       "set_number_for_exercise": 1,
       "weight_kg": 20.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "单腿各深蹲10次，一手扶器械，一腿架着另一腿90°立起；器械未放配重，自重+扶力感觉约20kg，双腿各10次"
     },
     {
       "exercise": "臀桥（挂腰带+杠铃片）",
       "source_set_index": 73,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "挂腰带臀桥，两边各挂15kg共30kg（片重，杆重未计）×12"
     },
     {
       "exercise": "正向哈克深蹲",
       "source_set_index": 74,
       "set_number_for_exercise": 1,
       "weight_kg": 80.0,
-      "reps": 9
+      "reps": 9,
+      "training_note": "80kg×9，与9/22重返后80×12相比差3个，力竭期"
     },
     {
       "exercise": "小龙门架绳索夹胸",
       "source_set_index": 75,
       "set_number_for_exercise": 1,
       "weight_kg": 40.0,
-      "reps": 8
+      "reps": 8,
+      "training_note": "两边各挂20kg共40kg×8，绳索夹胸"
     },
     {
       "exercise": "站姿W杠二头弯举",
       "source_set_index": 76,
       "set_number_for_exercise": 1,
       "weight_kg": 25.0,
-      "reps": 12
+      "reps": 12,
+      "training_note": "W型杠铃25kg×12，按杠型分类记录"
     },
     {
       "exercise": "坐姿哑铃推肩",
       "source_set_index": 77,
       "set_number_for_exercise": 1,
       "weight_kg": 12.5,
-      "reps": 9
+      "reps": 9,
+      "training_note": "自由哑铃坐姿推肩，单边12.5kg各9次"
     },
     {
       "exercise": "45°上斜俯卧哑铃飞鸟（自由哑铃）",
       "source_set_index": 78,
       "set_number_for_exercise": 1,
       "weight_kg": 10.0,
-      "reps": 9
+      "reps": 9,
+      "training_note": "趴在45°斜凳上，左右手各10kg×9，练肩（用户口述「练金」=练肩）"
     },
     {
       "exercise": "山羊挺身（抱10kg哑铃）",
       "source_set_index": 79,
       "set_number_for_exercise": 1,
       "weight_kg": 10.0,
-      "reps": 10
+      "reps": 10,
+      "training_note": "负重山羊挺身，抱10kg哑铃×10"
     },
     {
       "exercise": "罗马椅侧腹（左侧）",
       "source_set_index": 80,
       "set_number_for_exercise": 1,
       "weight_kg": 0,
-      "reps": 14
+      "reps": 14,
+      "training_note": "罗马椅侧腹左侧14下"
     },
     {
       "exercise": "罗马椅侧腹（右侧）",
       "source_set_index": 81,
       "set_number_for_exercise": 1,
       "weight_kg": 0,
-      "reps": 21
+      "reps": 21,
+      "training_note": "罗马椅侧腹右侧21下"
     },
     {
       "exercise": "器械悬垂举腿（自重）",
       "source_set_index": 82,
       "set_number_for_exercise": 1,
       "weight_kg": 0.0,
-      "reps": 22
+      "reps": 22,
+      "training_note": "自重悬垂举腿22下"
     },
     {
       "exercise": "山羊挺身（负重5kg）",
       "source_set_index": 83,
       "set_number_for_exercise": 1,
       "weight_kg": 5.0,
-      "reps": 3
+      "reps": 3,
+      "training_note": "负重5kg只做3个，力竭到底，无休息连续作战"
     },
     {
       "exercise": "牧师凳二头弯举（直杆）",
       "source_set_index": 84,
       "set_number_for_exercise": 1,
       "weight_kg": 15.0,
-      "reps": 5
+      "reps": 5,
+      "training_note": "直杆杠铃15kg×5，按杠型分类记录（直杆杠铃）"
     },
     {
       "exercise": "器械悬垂举腿（负重5kg）",
       "source_set_index": 85,
       "set_number_for_exercise": 1,
       "weight_kg": 5.0,
-      "reps": 3
+      "reps": 3,
+      "training_note": "负重悬垂举腿（挂5kg）×3，力竭做不动了，未休息连续作战"
     },
     {
       "exercise": "俯身轨道式划船器",
       "source_set_index": 86,
       "set_number_for_exercise": 1,
       "weight_kg": 30.0,
-      "reps": 7
+      "reps": 7,
+      "training_note": "人靠在斜垫上俯身，杠铃沿轨道上滑，类似史密斯轨迹；两边各挂15kg共30kg×7（与7/25同款器械，当天30×15）"
     },
     {
       "exercise": "卷腹",
       "source_set_index": 87,
       "set_number_for_exercise": 1,
       "weight_kg": 0.0,
-      "reps": 18
+      "reps": 18,
+      "training_note": "力竭期垫上/自重卷腹×18，只能做18个"
     }
   ]
 }

@@ -5,6 +5,7 @@ import argparse,datetime,json,shlex,subprocess
 def main():
     p=argparse.ArgumentParser();p.add_argument('--host',required=True);p.add_argument('--user',required=True);p.add_argument('--expected-hostname',required=True)
     p.add_argument('--port',type=int,default=22);p.add_argument('--key',type=Path);p.add_argument('--date',required=True);p.add_argument('--records',default='/home/openclaw-shared/fitness/records.jsonl');p.add_argument('--out',type=Path,required=True)
+    p.add_argument('--include-training-notes',action='store_true')
     a=p.parse_args();datetime.date.fromisoformat(a.date)
     if any(s.startswith('-') or any(c.isspace() for c in s) for s in [a.host,a.user]):p.error('Invalid SSH target')
     if not 1<=a.port<=65535:p.error('Invalid port')
@@ -18,6 +19,7 @@ def main():
     if who!=[a.expected_hostname,a.user]:raise RuntimeError('Remote identity mismatch; stop and confirm with user')
     source=Path(__file__).with_name('export_training_day.py').read_text(encoding='utf8')
     remote='python3 - --records '+shlex.quote(a.records)+' --date '+shlex.quote(a.date)
+    if a.include_training_notes:remote+=' --include-training-notes'
     result=subprocess.run(cmd+[remote],input=source,capture_output=True,text=True,encoding='utf8',timeout=60,check=True)
     data=json.loads(result.stdout)
     if data.get('date')!=a.date or not data.get('sets'):raise RuntimeError('Invalid training export')
