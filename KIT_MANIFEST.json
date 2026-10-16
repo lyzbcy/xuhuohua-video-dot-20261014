@@ -30,8 +30,8 @@
     },
     {
       "path": "agent.txt",
-      "bytes": 2767,
-      "sha256": "3eafbf9758cd0817466799f772134354d28797c4cb43b2db30a751ddb3ff311a"
+      "bytes": 3036,
+      "sha256": "bd756667e547277110bb1af627551149c2611cd01fa780934a109cf08ef68237"
     },
     {
       "path": "components/rpg/README.md",
